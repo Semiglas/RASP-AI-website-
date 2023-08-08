@@ -1,15 +1,358 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout>
+  <section id="section-one" class="h-screen px-8">
+    <div id="left-one" class="">
+      <div id="logo" class="flex items-center gap-3">
+        <div
+          class="logo-svg rounded-[25px] flex justify-center items-center bg-black h-14 w-14"
+        >
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Group 4">
+              <g id="Group 5">
+                <path
+                  id="Rectangle"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 6C0 2.68629 2.68629 0 6 0L14 0L14 8C14 11.3137 11.3137 14 8 14L0 14L0 6Z"
+                  fill="white"></path>
+                <path
+                  id="Rectangle Copy 8"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M30 24C30 27.3137 27.3137 30 24 30H16L16 22C16 18.6863 18.6863 16 22 16L30 16L30 24Z"
+                  fill="white"></path>
+                <path
+                  id="Rectangle Copy 9"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6 30C2.68629 30 0 27.3137 0 24L0 16L8 16C11.3137 16 14 18.6863 14 22L14 30L6 30Z"
+                  fill="white"></path>
+                <path
+                  id="Rectangle Copy 7"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24 0C27.3137 0 30 2.68629 30 6L30 14L22 14C18.6863 14 16 11.3137 16 8L16 0L24 0Z"
+                  fill="white"></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="logo-text">Rasp AI.</div>
+      </div>
+      <h1 class="hero">Generative Al <br> powered platform</h1>
+      <div class="left-bottom-one flex gap-3">
+        <div class="left-bottom-one-content w-full flex mt-24 gap-3">
+          <div
+            class="left-bottom-one-video flex flex-col gap-8 self-end basis-[49%]"
+          >
+            <h2 class="hero">Watch Demo</h2>
+            <svg
+              max-width="520"
+              viewBox="0 0 520 320"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="520" height="320" rx="32" fill="#F7F9FF"></rect>
+              <circle
+                cx="260"
+                cy="181"
+                r="50"
+                fill="url(#paint0_linear_96_2122)"></circle>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M266.422 179.211C267.896 179.948 267.896 182.052 266.422 182.789L254.894 188.553C253.565 189.218 252 188.251 252 186.764V175.236C252 173.749 253.565 172.782 254.894 173.447L266.422 179.211Z"
+                fill="black"></path>
+              <circle cx="36" cy="36" r="6" fill="#E7E2F0"></circle>
+              <circle opacity="0.5" cx="54" cy="36" r="6" fill="#C1E8FF"
+              ></circle>
+              <circle opacity="0.5" cx="72" cy="36" r="6" fill="#D8D8D8"
+              ></circle>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_96_2122"
+                  x1="185.246"
+                  y1="198.843"
+                  x2="268.525"
+                  y2="253.923"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#D2EEFE"></stop>
+                  <stop offset="0.589024" stop-color="#F0F0FF"></stop>
+                  <stop offset="1" stop-color="#F7E9FE"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="left-bottom-one-tabs basis-[49%]">
+            <h2 class="mb-5 hero">Values</h2>
+            <div class="card mb-3">
+              <div class="icon-and-h2 flex items-center gap-3">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="1" y="1" width="22" height="22" rx="4" fill="#161516"
+                  ></rect>
+                  <path
+                    d="M7.03516 8.72217L5.10547 10.6525L7.03516 12.5822"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                  <path
+                    d="M16.9199 11.6973L18.8379 13.6159L16.9199 15.5338"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                  <path
+                    d="M10.3906 16.2925L13.5519 7.70752"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+                <h2>Develop faster</h2>
+              </div>
+              <p>
+                RASP outputs quality Swift and Java code, so you can save on
+                development time.
+              </p>
+            </div>
+            <div class="card mb-3">
+              <div class="icon-and-h2 flex items-center gap-3">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="1" y="1" width="22" height="22" rx="4" fill="#161516"
+                  ></rect>
+                  <path
+                    d="M7.03516 8.72217L5.10547 10.6525L7.03516 12.5822"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                  <path
+                    d="M16.9199 11.6973L18.8379 13.6159L16.9199 15.5338"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                  <path
+                    d="M10.3906 16.2925L13.5519 7.70752"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+                <h2>Develop faster</h2>
+              </div>
+              <p>
+                RASP outputs quality Swift and Java code, so you can save on
+                development time.
+              </p>
+            </div>
+            <div class="card">
+              <div class="icon-and-h2 flex items-center gap-3">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="1" y="1" width="22" height="22" rx="4" fill="#161516"
+                  ></rect>
+                  <path
+                    d="M7.03516 8.72217L5.10547 10.6525L7.03516 12.5822"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                  <path
+                    d="M16.9199 11.6973L18.8379 13.6159L16.9199 15.5338"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                  <path
+                    d="M10.3906 16.2925L13.5519 7.70752"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+                <h2>Develop faster</h2>
+              </div>
+              <p>
+                RASP outputs quality Swift and Java code, so you can save on
+                development time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="right-one"
+      class="mt-8 flex items-center justify-center rounded-3xl"
+    >
+      <div class="bg-slate-700 rounded-3xl iphone">d</div>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  * {
+    font-family: "Albert Sans", sans-serif;
+    font-size: clamp();
+  }
+
+  #section-one {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    grid-column-gap: 8px;
+  }
+
+  h1.hero {
+    color: #000;
+    font-family: Albert Sans;
+    font-size: clamp(3rem, 1.7143rem + 3.5714vw, 6rem);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 115.2px */
+    letter-spacing: -1.92px;
+    max-width: 920px;
+  }
+
+  h1 {
+    color: #000;
+    font-family: Albert Sans;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 75.6px */
+    letter-spacing: -1.08px;
+  }
+
+  h2.hero {
+    color: #000;
+    font-family: Albert Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 44.8px */
+    letter-spacing: -0.64px;
+  }
+
+  .iphone {
+    width: 379.855px;
+    height: 796.068px;
+    flex-shrink: 0;
+    position: relative;
+    top: 100px;
+  }
+  p {
+    color: #000;
+    font-family: Albert Sans;
+	font-size: clamp(16px, 0.675rem + 0.375vw, 1.125rem);    
+	font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: -0.36px;
+    opacity: 0.4;
+  }
+
+  #left-one {
+	padding-top: clamp(1.5rem, 1.1rem + 2vw, 3.5rem);
+  }
+
+  .left-bottom-one-video svg {
+    position: relative;
+    top: -150px;
+  }
+
+  .logo-text {
+    color: #000;
+    font-family: Albert Sans;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px; /* 100% */
+    letter-spacing: 0.092px;
+    text-transform: lowercase;
+  }
+
+  .card {
+    display: flex;
+    width: 100%;
+    padding: 32px 32px 29px 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 32px;
+    background: rgba(238, 243, 255, 0.5);
+    position: relative;
+    top: 250px;
+  }
+
+  .card:hover {
+    box-shadow: 0px 48px 100px 0px rgba(36, 50, 180, 0.12);
+  }
+
+  .card h2 {
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+  }
+
+  #right-one {
+    background-color: rgba(238, 243, 255, 0.5);
+  }
+
+  #logo {
+    margin-bottom: clamp(2rem, 1.6rem + 2vw, 4rem);
+  }
+</style>
+
+<script>
+  // scroll animation anime.js first section
+  anime({
+    targets: ".card",
+    translateY: -250,
+    duration: 1000,
+    easing: "linear",
+  });
+
+  anime({
+    targets: ".left-bottom-one-video svg",
+    translateY: 150,
+    duration: 1200,
+    delay: 100,
+    easing: "linear",
+  });
+
+  anime({
+    targets: ".iphone",
+    translateY: -100,
+    duration: 1200,
+    delay: 200,
+    easing: "linear",
+  });
+</script>
