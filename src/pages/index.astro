@@ -1,60 +1,76 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/main.css"
 ---
 
 <MainLayout>
-  <section id="section-one" class="h-screen px-8">
-    <div id="left-one" class="">
-      <div id="logo" class="flex items-center gap-3">
-        <div
-          class="logo-svg rounded-[25px] flex justify-center items-center bg-black h-14 w-14"
+  <section id="section-one-wrapper">
+  <header class="flex justify-between">
+    <div id="logo" class="flex items-center">
+      <div class="logo-svg rounded-[25px] flex justify-center items-center">
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 58 58"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            width="30"
-            height="30"
-            viewBox="0 0 30 30"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="Group 4">
-              <g id="Group 5">
-                <path
-                  id="Rectangle"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0 6C0 2.68629 2.68629 0 6 0L14 0L14 8C14 11.3137 11.3137 14 8 14L0 14L0 6Z"
-                  fill="white"></path>
-                <path
-                  id="Rectangle Copy 8"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M30 24C30 27.3137 27.3137 30 24 30H16L16 22C16 18.6863 18.6863 16 22 16L30 16L30 24Z"
-                  fill="white"></path>
-                <path
-                  id="Rectangle Copy 9"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M6 30C2.68629 30 0 27.3137 0 24L0 16L8 16C11.3137 16 14 18.6863 14 22L14 30L6 30Z"
-                  fill="white"></path>
-                <path
-                  id="Rectangle Copy 7"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M24 0C27.3137 0 30 2.68629 30 6L30 14L22 14C18.6863 14 16 11.3137 16 8L16 0L24 0Z"
-                  fill="white"></path>
-              </g>
+          <g clip-path="url(#clip0_210_34)">
+            <path
+              d="M33 0H25C11.1929 0 0 11.1929 0 25V33C0 46.8071 11.1929 58 25 58H33C46.8071 58 58 46.8071 58 33V25C58 11.1929 46.8071 0 33 0Z"
+              fill="black"></path>
+            <g clip-path="url(#clip1_210_34)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M14 20C14 16.6863 16.6863 14 20 14H28V22C28 25.3137 25.3137 28 22 28H14V20Z"
+                fill="white"></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M44 38C44 41.3137 41.3137 44 38 44H30V36C30 32.6863 32.6863 30 36 30H44V38Z"
+                fill="white"></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20 44C16.6863 44 14 41.3137 14 38V30H22C25.3137 30 28 32.6863 28 36V44H20Z"
+                fill="white"></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M38 14C41.3137 14 44 16.6863 44 20V28H36C32.6863 28 30 25.3137 30 22V14H38Z"
+                fill="white"></path>
             </g>
-          </svg>
-        </div>
-        <div class="logo-text">Rasp AI.</div>
+          </g>
+          <defs>
+            <clipPath id="clip0_210_34">
+              <rect width="58" height="58" fill="white"></rect>
+            </clipPath>
+            <clipPath id="clip1_210_34">
+              <rect
+                width="30"
+                height="30"
+                fill="white"
+                transform="translate(14 14)"></rect>
+            </clipPath>
+          </defs>
+        </svg>
       </div>
-      <h1 class="hero">Generative Al <br> powered platform</h1>
+      <div class="logo-text">‎ Rasp AI.</div>
+    </div>
+    <button class="try-beta">
+      Try Beta Version
+    </button>
+  </header>
+  <div id="section-one" class="max-h-screen px-8">
+    <div id="left-one" class="flex flex-col justify-between">
+
+      
+      <h1 class="hero" >Generative Al <br /> powered platform</h1>
       <div class="left-bottom-one flex gap-3">
-        <div class="left-bottom-one-content w-full flex mt-24 gap-3">
-          <div
-            class="left-bottom-one-video flex flex-col gap-8 self-end basis-[49%]"
-          >
-            <h2 class="hero">Watch Demo</h2>
+        <div class="left-bottom-one-content w-full flex gap-3">
+          <div class="left-bottom-one-video flex flex-col self-end basis-[49%]">
+            <h2 class="hero inline-block">Watch Demo</h2>
             <svg
               max-width="520"
               viewBox="0 0 520 320"
@@ -94,7 +110,7 @@ import MainLayout from "../layouts/MainLayout.astro";
             </svg>
           </div>
           <div class="left-bottom-one-tabs basis-[49%]">
-            <h2 class="mb-5 hero">Values</h2>
+            <h2 class="hero">Values</h2>
             <div class="card mb-3">
               <div class="icon-and-h2 flex items-center gap-3">
                 <svg
@@ -134,76 +150,20 @@ import MainLayout from "../layouts/MainLayout.astro";
             </div>
             <div class="card mb-3">
               <div class="icon-and-h2 flex items-center gap-3">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x="1" y="1" width="22" height="22" rx="4" fill="#161516"
-                  ></rect>
-                  <path
-                    d="M7.03516 8.72217L5.10547 10.6525L7.03516 12.5822"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                  <path
-                    d="M16.9199 11.6973L18.8379 13.6159L16.9199 15.5338"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                  <path
-                    d="M10.3906 16.2925L13.5519 7.70752"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                </svg>
-                <h2>Develop faster</h2>
+               <img src="public/icon-2.svg" alt="">
+                <h2>Build better products</h2>
               </div>
               <p>
-                RASP outputs quality Swift and Java code, so you can save on
-                development time.
+                With all this saved time, you can focus on user testing and get better products and better revenue
               </p>
             </div>
             <div class="card">
               <div class="icon-and-h2 flex items-center gap-3">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x="1" y="1" width="22" height="22" rx="4" fill="#161516"
-                  ></rect>
-                  <path
-                    d="M7.03516 8.72217L5.10547 10.6525L7.03516 12.5822"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                  <path
-                    d="M16.9199 11.6973L18.8379 13.6159L16.9199 15.5338"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                  <path
-                    d="M10.3906 16.2925L13.5519 7.70752"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                </svg>
-                <h2>Develop faster</h2>
+               <img src="" alt="">
+                <h2>Build design faster</h2>
               </div>
               <p>
-                RASP outputs quality Swift and Java code, so you can save on
-                development time.
+                Just text RASP your edits and see implementation in real-time.
               </p>
             </div>
           </div>
@@ -212,147 +172,43 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
     <div
       id="right-one"
-      class="mt-8 flex items-center justify-center rounded-3xl"
+      class=" flex relative items-center justify-center rounded-3xl"
     >
-      <div class="bg-slate-700 rounded-3xl iphone">d</div>
+    <div id="loading-phone" class="flex justify-between">
+      <h3>Performing interface development…</h3>
+      <img src="public/layer-3d.png" alt="" srcset="">
     </div>
-  </section>
-</MainLayout>
-
-<style>
-  * {
-    font-family: "Albert Sans", sans-serif;
-    font-size: clamp();
-  }
-
-  #section-one {
-    display: grid;
-    grid-template-columns: 2fr 1.5fr;
-    grid-column-gap: 8px;
-  }
-
-  h1.hero {
-    color: #000;
-    font-family: Albert Sans;
-    font-size: clamp(3rem, 1.7143rem + 3.5714vw, 6rem);
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%; /* 115.2px */
-    letter-spacing: -1.92px;
-    max-width: 920px;
-  }
-
-  h1 {
-    color: #000;
-    font-family: Albert Sans;
-    font-size: 54px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%; /* 75.6px */
-    letter-spacing: -1.08px;
-  }
-
-  h2.hero {
-    color: #000;
-    font-family: Albert Sans;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%; /* 44.8px */
-    letter-spacing: -0.64px;
-  }
-
-  .iphone {
-    width: 379.855px;
-    height: 796.068px;
-    flex-shrink: 0;
-    position: relative;
-    top: 100px;
-  }
-  p {
-    color: #000;
-    font-family: Albert Sans;
-	font-size: clamp(16px, 0.675rem + 0.375vw, 1.125rem);    
-	font-style: normal;
-    font-weight: 500;
-    line-height: 140%; /* 25.2px */
-    letter-spacing: -0.36px;
-    opacity: 0.4;
-  }
-
-  #left-one {
-	padding-top: clamp(1.5rem, 1.1rem + 2vw, 3.5rem);
-  }
-
-  .left-bottom-one-video svg {
-    position: relative;
-    top: -150px;
-  }
-
-  .logo-text {
-    color: #000;
-    font-family: Albert Sans;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 38px; /* 100% */
-    letter-spacing: 0.092px;
-    text-transform: lowercase;
-  }
-
-  .card {
-    display: flex;
-    width: 100%;
-    padding: 32px 32px 29px 32px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 8px;
-    border-radius: 32px;
-    background: rgba(238, 243, 255, 0.5);
-    position: relative;
-    top: 250px;
-  }
-
-  .card:hover {
-    box-shadow: 0px 48px 100px 0px rgba(36, 50, 180, 0.12);
-  }
-
-  .card h2 {
-    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
-  }
-
-  #right-one {
-    background-color: rgba(238, 243, 255, 0.5);
-  }
-
-  #logo {
-    margin-bottom: clamp(2rem, 1.6rem + 2vw, 4rem);
-  }
-</style>
-
+      <div class="rounded-3xl iphone">
+        <img src="public/Group 271.svg" alt="" srcset="">
+      </div>
+    </div>
+  </div>
+</section>
 <script>
-  // scroll animation anime.js first section
-  anime({
-    targets: ".card",
-    translateY: -250,
-    duration: 1000,
-    easing: "linear",
+    
+  // Lenis Smooth Scroll
+  import Lenis from "@studio-freight/lenis";
+  
+  const lenis = new Lenis({
+    smoothWheel: true,
+    smoothTouch: true,
+    duration: 2.5,
   });
 
-  anime({
-    targets: ".left-bottom-one-video svg",
-    translateY: 150,
-    duration: 1200,
-    delay: 100,
-    easing: "linear",
+  lenis.on("scroll", (e) => {
+    console.log(e);
   });
 
-  anime({
-    targets: ".iphone",
-    translateY: -100,
-    duration: 1200,
-    delay: 200,
-    easing: "linear",
-  });
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+
+  //GSAP AND SCROLL TRIGGER
+  import { gsap, ScrollTrigger, Draggable } from "gsap/all";
 </script>
+
+
+

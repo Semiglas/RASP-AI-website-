@@ -1,0 +1,213 @@
+* {
+  font-family: "Albert Sans", sans-serif;
+  font-size: clamp();
+}
+
+body {
+  height: 100%;
+}
+
+section {
+  /* prevent section expanding futher that 1920px */
+  max-width: 1920px;
+  margin-inline: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding:1.25rem;
+}
+
+header {
+  
+  /* inline padding /has to be same is in section */
+  padding-inline: 2.5rem;
+  padding-bottom: 12px;
+}
+
+#section-one {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-column-gap: 8px;
+  padding-inline: 2.5rem;
+  flex: 1;
+}
+
+h1.hero {
+  color: #000;
+  font-family: Albert Sans;
+  font-size: clamp(3rem, 1.7143rem + 3.5714vw, 6rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 115.2px */
+  letter-spacing: -1.92px;
+  max-width: 920px;
+}
+
+h1 {
+  color: #000;
+  font-family: Albert Sans;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 75.6px */
+  letter-spacing: -1.08px;
+}
+
+h2.hero {
+  color: #000;
+  font-family: Albert Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 44.8px */
+  letter-spacing: -0.64px;
+  
+}
+
+.iphone {
+}
+p {
+  color: #000;
+  font-family: Albert Sans;
+  font-size: clamp(16px, 0.675rem + 0.375vw, 1.125rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: -0.36px;
+  opacity: 0.4;
+}
+
+#left-one {
+  /* padding-top: clamp(1.5rem, 1.1rem + 2vw, 3.5rem); */
+  height: 100%;
+}
+
+.left-bottom-one-video svg {
+  position: relative;
+}
+
+.logo-text {
+  color: #000;
+  font-family: Albert Sans;
+  font-size: clamp(21px, -0.786rem + 3.571vw, 38px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px; /* 100% */
+  letter-spacing: 0.092px;
+  text-transform: lowercase;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  padding: 32px 32px 29px 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 32px;
+  background: rgba(238, 243, 255, 0.5);
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0px 48px 100px 0px rgba(36, 50, 180, 0.12);
+}
+
+.card h2 {
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+}
+
+#right-one {
+  background-color: rgba(238, 243, 255, 0.5);
+  padding: clamp(1.5rem, 1.167rem + 0.694vw, 2rem);
+}
+
+.logo-svg {
+  /* margin-bottom: clamp(2rem, 1.6rem + 2vw, 4rem); */
+  width: clamp(32px, -0.786rem + 3.571vw, 3.5rem);
+}
+
+#logo {
+  position: relative;
+}
+
+.try-beta {
+  background: linear-gradient(
+    123.48deg,
+    #d2eefe 12.11%,
+    #f0f0ff 54.55%,
+    #f7e9fe 84.16%
+  );
+  border-radius: 42px;
+  padding-block: 1.75rem;
+  padding-inline: 4.75rem;
+  color: #000;
+  font-family: Albert Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+
+/* Settting points to all fluid stuff */
+
+@media screen and (min-width: 1440px) {
+}
+
+@media screen and (min-width: 1024px) {
+  /* h1 text to epxand until 1920 max fs */
+  h1.hero {
+    font-size: clamp(2.5rem, -1.5rem + 6.25vw, 6rem);
+  }
+
+  /* Logo related queries */
+  .logo-text {
+    font-size: clamp(2rem, 1.571rem + 0.67vw, 2.375rem);
+  }
+
+  .logo-svg {
+    width: clamp(3.125rem, 2.554rem + 0.893vw, 3.625rem);
+  }
+
+.icon-and-h2 h2 {
+  font-size:clamp(1.25rem, 0.393rem + 1.339vw, 2rem);
+}
+
+h2.hero {
+ margin-bottom: 4%;
+}
+
+}
+
+#loading-phone {
+  position: absolute;
+  bottom: 20%;
+  width: 80%;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  border-radius: 73px;
+  background: white;
+  backdrop-filter: blur(23px);
+  color: #000;
+  font-family: Albert Sans;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.234px;
+}
+
+/* Media query for button padding (from 1024 to 1440) */
+
+@media screen and (min-width: 768px) and (max-width: 1920px) {
+  .try-beta {
+    padding-block: clamp(1rem, 0.417rem + 1.215vw, 1.875rem);
+    padding-inline: clamp(2rem, 0.25rem + 3.646vw, 4.625rem);
+    font-size: clamp(1rem, 0.833rem + 0.347vw, 1.25rem);
+  }
+
+  .card {
+    padding: clamp(1rem, 0.333rem + 1.389vw, 2rem);
+  }
+}
