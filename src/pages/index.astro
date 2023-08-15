@@ -1,214 +1,215 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import "../styles/main.css"
+import "../styles/main.css";
 ---
 
 <MainLayout>
   <section id="section-one-wrapper">
-  <header class="flex justify-between">
-    <div id="logo" class="flex items-center">
-      <div class="logo-svg rounded-[25px] flex justify-center items-center">
-        <svg
-          width="100%"
-          height="100%"
-          viewBox="0 0 58 58"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g clip-path="url(#clip0_210_34)">
-            <path
-              d="M33 0H25C11.1929 0 0 11.1929 0 25V33C0 46.8071 11.1929 58 25 58H33C46.8071 58 58 46.8071 58 33V25C58 11.1929 46.8071 0 33 0Z"
-              fill="black"></path>
-            <g clip-path="url(#clip1_210_34)">
+    <header class="flex justify-between">
+      <div id="logo" class="flex items-center">
+        <div class="logo-svg rounded-[25px] flex justify-center items-center">
+          <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 58 58"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_210_34)">
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M14 20C14 16.6863 16.6863 14 20 14H28V22C28 25.3137 25.3137 28 22 28H14V20Z"
-                fill="white"></path>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M44 38C44 41.3137 41.3137 44 38 44H30V36C30 32.6863 32.6863 30 36 30H44V38Z"
-                fill="white"></path>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M20 44C16.6863 44 14 41.3137 14 38V30H22C25.3137 30 28 32.6863 28 36V44H20Z"
-                fill="white"></path>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M38 14C41.3137 14 44 16.6863 44 20V28H36C32.6863 28 30 25.3137 30 22V14H38Z"
-                fill="white"></path>
-            </g>
-          </g>
-          <defs>
-            <clipPath id="clip0_210_34">
-              <rect width="58" height="58" fill="white"></rect>
-            </clipPath>
-            <clipPath id="clip1_210_34">
-              <rect
-                width="30"
-                height="30"
-                fill="white"
-                transform="translate(14 14)"></rect>
-            </clipPath>
-          </defs>
-        </svg>
-      </div>
-      <div class="logo-text">‎ Rasp AI.</div>
-    </div>
-    <button class="try-beta">
-      Try Beta Version
-    </button>
-  </header>
-  <div id="section-one" class="max-h-screen px-8">
-    <div id="left-one" class="flex flex-col justify-between">
-
-      
-      <h1 class="hero" >Generative Al <br /> powered platform</h1>
-      <div class="left-bottom-one flex gap-3">
-        <div class="left-bottom-one-content w-full flex gap-3">
-          <div class="left-bottom-one-video flex flex-col self-end basis-[49%]">
-            <h2 class="hero inline-block">Watch Demo</h2>
-            <svg
-              max-width="520"
-              viewBox="0 0 520 320"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="520" height="320" rx="32" fill="#F7F9FF"></rect>
-              <circle
-                cx="260"
-                cy="181"
-                r="50"
-                fill="url(#paint0_linear_96_2122)"></circle>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M266.422 179.211C267.896 179.948 267.896 182.052 266.422 182.789L254.894 188.553C253.565 189.218 252 188.251 252 186.764V175.236C252 173.749 253.565 172.782 254.894 173.447L266.422 179.211Z"
+                d="M33 0H25C11.1929 0 0 11.1929 0 25V33C0 46.8071 11.1929 58 25 58H33C46.8071 58 58 46.8071 58 33V25C58 11.1929 46.8071 0 33 0Z"
                 fill="black"></path>
-              <circle cx="36" cy="36" r="6" fill="#E7E2F0"></circle>
-              <circle opacity="0.5" cx="54" cy="36" r="6" fill="#C1E8FF"
-              ></circle>
-              <circle opacity="0.5" cx="72" cy="36" r="6" fill="#D8D8D8"
-              ></circle>
-              <defs>
-                <linearGradient
-                  id="paint0_linear_96_2122"
-                  x1="185.246"
-                  y1="198.843"
-                  x2="268.525"
-                  y2="253.923"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#D2EEFE"></stop>
-                  <stop offset="0.589024" stop-color="#F0F0FF"></stop>
-                  <stop offset="1" stop-color="#F7E9FE"></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div class="left-bottom-one-tabs basis-[49%]">
-            <h2 class="hero">Values</h2>
-            <div class="card mb-3">
-              <div class="icon-and-h2 flex items-center gap-3">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x="1" y="1" width="22" height="22" rx="4" fill="#161516"
-                  ></rect>
-                  <path
-                    d="M7.03516 8.72217L5.10547 10.6525L7.03516 12.5822"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                  <path
-                    d="M16.9199 11.6973L18.8379 13.6159L16.9199 15.5338"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                  <path
-                    d="M10.3906 16.2925L13.5519 7.70752"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                </svg>
-                <h2>Develop faster</h2>
-              </div>
-              <p>
-                RASP outputs quality Swift and Java code, so you can save on
-                development time.
-              </p>
+              <g clip-path="url(#clip1_210_34)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14 20C14 16.6863 16.6863 14 20 14H28V22C28 25.3137 25.3137 28 22 28H14V20Z"
+                  fill="white"></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M44 38C44 41.3137 41.3137 44 38 44H30V36C30 32.6863 32.6863 30 36 30H44V38Z"
+                  fill="white"></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20 44C16.6863 44 14 41.3137 14 38V30H22C25.3137 30 28 32.6863 28 36V44H20Z"
+                  fill="white"></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M38 14C41.3137 14 44 16.6863 44 20V28H36C32.6863 28 30 25.3137 30 22V14H38Z"
+                  fill="white"></path>
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_210_34">
+                <rect width="58" height="58" fill="white"></rect>
+              </clipPath>
+              <clipPath id="clip1_210_34">
+                <rect
+                  width="30"
+                  height="30"
+                  fill="white"
+                  transform="translate(14 14)"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo-text">‎ Rasp AI.</div>
+      </div>
+      <button class="try-beta"> Try Beta Version</button>
+    </header>
+    <div id="section-one" class="max-h-screen px-8">
+      <div id="left-one" class="flex flex-col justify-between">
+        <h1 class="hero">Generative Al <br /> powered platform</h1>
+        <div class="left-bottom-one flex gap-3">
+          <div class="left-bottom-one-content w-full flex gap-3">
+            <div
+              class="left-bottom-one-video flex flex-col self-end basis-[49%]"
+            >
+              <h2 class="hero inline-block">Watch Demo</h2>
+              <svg
+                max-width="520"
+                viewBox="0 0 520 320"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="520" height="320" rx="32" fill="#F7F9FF"></rect>
+                <circle
+                  cx="260"
+                  cy="181"
+                  r="50"
+                  fill="url(#paint0_linear_96_2122)"></circle>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M266.422 179.211C267.896 179.948 267.896 182.052 266.422 182.789L254.894 188.553C253.565 189.218 252 188.251 252 186.764V175.236C252 173.749 253.565 172.782 254.894 173.447L266.422 179.211Z"
+                  fill="black"></path>
+                <circle cx="36" cy="36" r="6" fill="#E7E2F0"></circle>
+                <circle opacity="0.5" cx="54" cy="36" r="6" fill="#C1E8FF"
+                ></circle>
+                <circle opacity="0.5" cx="72" cy="36" r="6" fill="#D8D8D8"
+                ></circle>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_96_2122"
+                    x1="185.246"
+                    y1="198.843"
+                    x2="268.525"
+                    y2="253.923"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#D2EEFE"></stop>
+                    <stop offset="0.589024" stop-color="#F0F0FF"></stop>
+                    <stop offset="1" stop-color="#F7E9FE"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
             </div>
-            <div class="card mb-3">
-              <div class="icon-and-h2 flex items-center gap-3">
-               <img src="public/icon-2.svg" alt="">
-                <h2>Build better products</h2>
+            <div class="left-bottom-one-tabs basis-[49%]">
+              <h2 class="hero">Values</h2>
+              <div class="card mb-3">
+                <div class="icon-and-h2 flex items-center gap-3">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="1"
+                      y="1"
+                      width="22"
+                      height="22"
+                      rx="4"
+                      fill="#161516"></rect>
+                    <path
+                      d="M7.03516 8.72217L5.10547 10.6525L7.03516 12.5822"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                    <path
+                      d="M16.9199 11.6973L18.8379 13.6159L16.9199 15.5338"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                    <path
+                      d="M10.3906 16.2925L13.5519 7.70752"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                  <h2>Develop faster</h2>
+                </div>
+                <p>
+                  RASP outputs quality Swift and Java code, so you can save on
+                  development time.
+                </p>
               </div>
-              <p>
-                With all this saved time, you can focus on user testing and get better products and better revenue
-              </p>
-            </div>
-            <div class="card">
-              <div class="icon-and-h2 flex items-center gap-3">
-               <img src="" alt="">
-                <h2>Build design faster</h2>
+              <div class="card mb-3">
+                <div class="icon-and-h2 flex items-center gap-3">
+                  <img src="dist/icon-2.svg" alt="" />
+                  <h2>Build better products</h2>
+                </div>
+                <p>
+                  With all this saved time, you can focus on user testing and
+                  get better products and better revenue
+                </p>
               </div>
-              <p>
-                Just text RASP your edits and see implementation in real-time.
-              </p>
+              <div class="card">
+                <div class="icon-and-h2 flex items-center gap-3">
+                  <img src="" alt="" />
+                  <h2>Build design faster</h2>
+                </div>
+                <p>
+                  Just text RASP your edits and see implementation in real-time.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      id="right-one"
-      class=" flex relative items-center justify-center rounded-3xl"
-    >
-    <div id="loading-phone" class="flex justify-between">
-      <h3>Performing interface development…</h3>
-      <img src="public/layer-3d.png" alt="" srcset="">
-    </div>
-      <div class="rounded-3xl iphone">
-        <img src="public/Group 271.svg" alt="" srcset="">
+      <div
+        id="right-one"
+        class="flex relative items-center justify-center rounded-3xl"
+      >
+        <div id="loading-phone" class="flex justify-between">
+          <h3>Performing interface development…</h3>
+          <img src="dist/layer-3d.png" alt="" srcset="" />
+        </div>
+        <div class="rounded-3xl iphone">
+          <img src="dist/Group 271.svg" alt="" srcset="" />
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<script>
-    
-  // Lenis Smooth Scroll
-  import Lenis from "@studio-freight/lenis";
-  
-  const lenis = new Lenis({
-    smoothWheel: true,
-    smoothTouch: true,
-    duration: 2.5,
-  });
+  </section>
+  <script>
+    // Lenis Smooth Scroll
+    import Lenis from "@studio-freight/lenis";
 
-  lenis.on("scroll", (e) => {
-    console.log(e);
-  });
+    const lenis = new Lenis({
+      smoothWheel: true,
+      smoothTouch: true,
+      duration: 2.5,
+    });
 
-  function raf(time) {
-    lenis.raf(time);
+    lenis.on("scroll", (e) => {
+      console.log(e);
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
     requestAnimationFrame(raf);
-  }
 
-  requestAnimationFrame(raf);
-
-  //GSAP AND SCROLL TRIGGER
-  import { gsap, ScrollTrigger, Draggable } from "gsap/all";
-</script>
-
-
-
+    //GSAP AND SCROLL TRIGGER
+    import { gsap, ScrollTrigger, Draggable } from "gsap/all";
+  </script>
+</MainLayout>
