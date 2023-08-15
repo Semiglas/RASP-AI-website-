@@ -177,6 +177,7 @@ p {
 
 h2.hero {
  margin-bottom: 4%;
+ font-size: clamp(1.25rem, 0.393rem + 1.339vw, 2rem);
 }
 
 }
