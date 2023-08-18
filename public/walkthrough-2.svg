@@ -1,0 +1,18 @@
+<svg width="396" height="479" viewBox="0 0 396 479" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="194" height="194" rx="24" transform="matrix(0.707156 -0.707058 0.707156 0.707058 -224 5)" fill="white" fill-opacity="0.458151"/>
+<rect x="2.12147" width="191" height="191" rx="22.5" transform="matrix(0.707156 -0.707058 0.707156 0.707058 -223.379 6.5)" stroke="white" stroke-opacity="0.382922" stroke-width="3"/>
+<rect width="194" height="194" rx="24" transform="matrix(0.707065 -0.707148 0.707065 0.707148 -257 341)" fill="white" fill-opacity="0.458151"/>
+<rect x="2.1212" width="191" height="191" rx="22.5" transform="matrix(0.707065 -0.707148 0.707065 0.707148 -256.379 342.5)" stroke="white" stroke-opacity="0.382922" stroke-width="3"/>
+<rect width="194" height="194" rx="24" transform="matrix(0.707156 -0.707058 0.707156 0.707058 85 22)" fill="white"/>
+<rect x="2.12147" width="191" height="191" rx="22.5" transform="matrix(0.707156 -0.707058 0.707156 0.707058 85.6213 23.5)" stroke="white" stroke-opacity="0.382922" stroke-width="3"/>
+<rect width="194" height="194" rx="24" transform="matrix(0.707156 -0.707058 0.707156 0.707058 121 296)" fill="url(#paint0_linear_1342_2034)"/>
+<rect width="194" height="194" rx="24" transform="matrix(0.707156 -0.707058 0.707156 0.707058 -86 182)" fill="white" fill-opacity="0.458151"/>
+<rect x="2.12147" width="191" height="191" rx="22.5" transform="matrix(0.707156 -0.707058 0.707156 0.707058 -85.3787 183.5)" stroke="white" stroke-opacity="0.382922" stroke-width="3"/>
+<defs>
+<linearGradient id="paint0_linear_1342_2034" x1="220.393" y1="76.9071" x2="58.8302" y2="-29.9465" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D2EEFE"/>
+<stop offset="0.589024" stop-color="#F0F0FF"/>
+<stop offset="1" stop-color="#F7E9FE"/>
+</linearGradient>
+</defs>
+</svg>
