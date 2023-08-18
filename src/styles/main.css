@@ -294,7 +294,7 @@ p {
 
 
 .grid-item-2 {
-  background-image: url("/public/svg-rotate.svg");
+  background-image: url("svg-rotate.svg");
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: 100%;
@@ -319,7 +319,7 @@ p {
 }
 
 .walkfru-item.walkfru-4 {
-  background-image: url("public/flex-4.svg");
+  background-image: url("flex-4.svg");
   background-size: cover;
   background-color: white;
   background-attachment: fixed;
@@ -338,17 +338,17 @@ p {
 }
 
 .walkfru-item:nth-of-type(1) {
-  background-image: url("public/walkthrough-1.svg");
+  background-image: url("walkthrough-1.svg");
 }
 
 .walkfru-item:nth-of-type(2) {
   background-color: #f5f6fe;
-  background-image: url("public/walkthrough-2.svg");
+  background-image: url("walkthrough-2.svg");
   background-repeat: no-repeat;
 }
 .walkfru-item:nth-of-type(3) {
   background-color: #f5f6fe;
-  background-image: url("public/walkthrough-3.svg");
+  background-image: url("walkthrough-3.svg");
 }
 
 
