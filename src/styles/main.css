@@ -469,7 +469,7 @@ p {
     grid-template-columns: none;
   }
 
-  .section-two-wrapper button.hidden {
+  #section-two-wrapper button.hidden {
     display: none;
   }
 
