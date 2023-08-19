@@ -501,6 +501,8 @@ p {
 
   section {
     min-height:fit-content;
+    padding-inline: 16px;
+    column-gap: 24px;
   }
 
 
@@ -535,14 +537,25 @@ p {
     }
 
     .section {
+      row-gap: 24px;
       grid-template-columns: none;
     }
 
     .left-bottom-one-content {
       display: grid;
-
+      row-gap: 24px;
       grid-auto-flow: row;
       grid-template-columns: none;
+    }
+
+    .iphone img {
+      max-width: 80%;
+      margin-inline: auto;
+    }
+
+
+    .left-bottom-one-video {
+      gap:16px;
     }
 
     .grid-container {
@@ -585,6 +598,132 @@ p {
 
       .footer {
         flex-direction: column-reverse;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        gap:32px;
+        padding:32px;
+        /* FIXME i'm risking here because i had a layout issue, so take notice of waht you do for desktop that bitch can break */
+        margin-top:-20px;
       }
+
+      
+    .only-desktop {
+      display:none !important;
+    }
+
+    /* mobile more */
+    .try-beta {
+      font-size:16px;
+      padding:18px 26px;
+    }
+
+    #logo {
+      display: none;
+    }
+
+    h1.hero {
+      font-size: 40px;
+      display: block;
+      margin-bottom:36px;
+      margin-top: 32px;
+    }
+
+    h2.hero {
+      font-size: 20px;
+    }
+
+
+    .left-bottom-one-tabs h2.hero {
+      margin-bottom: 16px;
+    }
+
+    #right-one {
+      order: 0;
+
+    }
+
+    #left-one {
+      order:1;
+    }
+
+    #left-one h1 {
+      display: none;
+    }
+
+    #loading-phone {
+      min-width: 100%;
+    }
+
+    .card {
+      padding: 1rem;
+    }
+
+    .card h2 , .grid-item h2, .walkfru-h2-and-text h2, .section-3-left h2 , .section-3-left p {
+      font-size: 24px;
+    }
+
+    .card p , .grid-item p , .walkfru-h2-and-text p{
+      font-size: 18px;
+    }
+
+    h1.section-heading {
+      font-size:40px;
+    }
+
+    #section-two-wrapper {
+      padding:16px;
+    }
+
+    .grid-item-2 {
+      min-height:450px;
+    }
+
+    .grid-item .blacked {
+      display: none;
+    }
+
+    .walkfru-item {
+      padding: 16px;
+    }
+
+    .walkfru-item .walkfru-h2-and-text {
+      padding: 24px;
+    }
+
+    .flex-container-walkthrough {
+      min-height:600px;
+    }
+
+    .walkfru-item {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    header {
+      padding-bottom: 0;
+    }
+
+    button.blacked.hidden {
+      display:flex;
+      padding:0.2rem;
+      justify-self: start;
+      border-radius: 100000px;
+      gap:30px;
+      margin-block: 32px;
+    }
+
+    button.hidden svg {
+      width:50px;
+      /* padding-left: .2rem; */
+      height: 80%;
+    }
+
+    button.hidden span {
+      padding-right: 40px;
+    }
+
+    .section-3-left button.hidden svg {
+      height:95%;
+    }
+
 
 }
