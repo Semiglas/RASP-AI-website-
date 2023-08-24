@@ -52,7 +52,7 @@ header {
 
 h1.hero {
   color: var(--blackish);
-  font-size: clamp(3rem, 1.7143rem + 3.5714vw, 6rem);
+  font-size: clamp(2.5rem, 1.7143rem + 3.5714vw, 6rem);
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 115.2px */
@@ -756,5 +756,13 @@ p {
 
   .section-3-left button.hidden svg {
     height: 95%;
+  }
+}
+
+@media not all and (min-resolution:.001dpcm) {
+  @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    section {
+      min-height: 100%;
+    }
   }
 }
