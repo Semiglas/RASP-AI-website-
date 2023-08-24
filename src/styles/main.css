@@ -411,8 +411,8 @@ p {
 }
 
 
-.icon-holder-deep img:hover{
-  filter: invert(27%) sepia(95%) saturate(743%) hue-rotate(346deg) brightness(102%) contrast(101%);
+.svg-wrap-hover svg:hover, .svg-wrap-hover svg:hover path {
+  fill: linear-gradient(123deg, #94D8FF 0%, #A5A5FF 58.90%, #E5B0FF 100%);
 }
 
 .only-desktop > span {
