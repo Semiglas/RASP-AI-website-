@@ -1,8 +1,15 @@
 import { defineConfig } from 'astro/config';
-
+import autoprefixer from 'autoprefixer';
 import tailwind from "@astrojs/tailwind";
+
+import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()]
+  vite: {
+    postcss: {
+      plugins: [autoprefixer({})]
+    }
+  },
+  integrations: [tailwind(), image()]
 });
