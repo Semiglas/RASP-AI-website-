@@ -358,14 +358,15 @@ p {
 
 /* TODO remove min height on safari */
 
+/* FIXME actaully just letting you know that it is probably not needed at all (1024mq) */
 @media screen and (min-width: 1024px) {
   /* h1 text to epxand until 1920 max fs */
-  h1.hero {
+  /* h1.hero {
     font-size: clamp(2.5rem, -1.5rem + 6.25vw, 6rem);
   }
 
   /* Logo related queries */
-  .logo-text {
+  /* .logo-text {
     font-size: clamp(2rem, 1.571rem + 0.67vw, 2.375rem);
   }
 
@@ -376,7 +377,7 @@ p {
   h2.hero {
     margin-bottom: 4%;
     font-size: clamp(1.25rem, 0.393rem + 1.339vw, 2rem);
-  }
+  } */
 }
 
 
@@ -409,6 +410,14 @@ p {
   margin-left: 10%;
 }
 
+
+.icon-holder-deep img:hover{
+  filter: invert(27%) sepia(95%) saturate(743%) hue-rotate(346deg) brightness(102%) contrast(101%);
+}
+
+.only-desktop > span {
+
+}
 
 @media screen and (max-width:1024px) {
   #heading-svg-thingy-large {
@@ -451,7 +460,7 @@ p {
   }
 
   .blacked {
-    gap: clamp(2rem, 0.25rem + 3.646vw, 4.625rem);
+    /* gap: clamp(2rem, 0.25rem + 3.646vw, 4.625rem); */
 
     padding: clamp(0.25rem, 0rem + 0.521vw, 0.625rem);
     /* TODO think on keeping the button big */
