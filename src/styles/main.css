@@ -11,6 +11,10 @@ body {
   height: 100%;
 }
 
+.svg-wrap-hover {
+  position: relative;
+}
+
 section {
   /* prevent section expanding futher that 1920px */
   max-width: 1920px;
@@ -23,6 +27,10 @@ section {
   height: auto;
   min-height: 100vh;
   /* height: max(100vh, 100%);*/
+}
+
+.icon-and-h2 h2 {
+  font-weight: 600;
 }
 
 section:nth-of-type(4) {
@@ -327,6 +335,7 @@ p {
   gap: 16px;
 }
 
+
 .walkfru-item:nth-of-type(1) {
   background-image: url("/walkthrough-1.svg");
 }
@@ -413,6 +422,8 @@ p {
 
 .svg-wrap-hover svg:hover, .svg-wrap-hover svg:hover path {
   fill: linear-gradient(123deg, #94D8FF 0%, #A5A5FF 58.90%, #E5B0FF 100%);
+
+
 }
 
 .only-desktop > span {
@@ -447,9 +458,7 @@ p {
   .grid-item {
   }
 
-  .icon-and-h2 h2 {
-    font-weight: 600;
-  }
+
 
   .grid-item p {
     font-size: clamp(0.75rem, 0.5rem + 0.521vw, 1.125rem);
@@ -603,7 +612,7 @@ p {
   }
 
   .blacked {
-    position: static;
+    position: relative;
     align-self: center;
   }
 
@@ -765,4 +774,21 @@ p {
       min-height: 100%;
     }
   }
+}
+
+.gradiented  {
+  opacity: 0;
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  transition: opacity .4s ease-in-out;
+}
+
+
+.button-gradient-svg {
+  opacity: 0;
+  position: absolute;
+
+  transition: opacity 0.1s ease-in-out;
 }
