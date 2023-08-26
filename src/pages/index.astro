@@ -4,65 +4,207 @@ import "../styles/main.css";
 ---
 
 <MainLayout>
-  <section id="section-one-wrapper" class=" section-full-height section-wrapper">
-    <header class="flex justify-between">
-      <div id="logo" class="flex items-center">
-        <div class="logo-svg rounded-[25px] flex justify-center items-center">
-          <svg
-            width="100%"
-            height="100%"
-            viewBox="0 0 58 58"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+  <div data-type="wrapper">
+    <div data-type="modal">
+      <form action="">
+      <div class="modal-header">
+        <h2>Try Beta Version</h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="17"
+          viewBox="0 0 16 17"
+          fill="none"
+          data-type="modal__close-button"
+        >
+          <g
+            id="Linear / Essentional, UI / Close Square"
+            clip-path="url(#clip0_982_1534)"
           >
-            <g clip-path="url(#clip0_210_34)">
-              <path
-                d="M33 0H25C11.1929 0 0 11.1929 0 25V33C0 46.8071 11.1929 58 25 58H33C46.8071 58 58 46.8071 58 33V25C58 11.1929 46.8071 0 33 0Z"
-                fill="black"></path>
-              <g clip-path="url(#clip1_210_34)">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M14 20C14 16.6863 16.6863 14 20 14H28V22C28 25.3137 25.3137 28 22 28H14V20Z"
-                  fill="white"></path>
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M44 38C44 41.3137 41.3137 44 38 44H30V36C30 32.6863 32.6863 30 36 30H44V38Z"
-                  fill="white"></path>
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M20 44C16.6863 44 14 41.3137 14 38V30H22C25.3137 30 28 32.6863 28 36V44H20Z"
-                  fill="white"></path>
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M38 14C41.3137 14 44 16.6863 44 20V28H36C32.6863 28 30 25.3137 30 22V14H38Z"
-                  fill="white"></path>
-              </g>
-            </g>
-            <defs>
-              <clipPath id="clip0_210_34">
-                <rect width="58" height="58" fill="white"></rect>
-              </clipPath>
-              <clipPath id="clip1_210_34">
-                <rect
-                  width="30"
-                  height="30"
-                  fill="white"
-                  transform="translate(14 14)"></rect>
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="logo-text">‎ Rasp AI.</div>
+            <path
+              id="Vector"
+              d="M17.9999 -0.999919L-2 19M-2.00008 -1L17.9998 18.9999"
+              stroke="#131313"
+              stroke-width="1.5"
+              stroke-linecap="round"></path>
+          </g>
+          <defs>
+            <clipPath id="clip0_982_1534">
+              <rect
+                width="16"
+                height="16"
+                fill="white"
+                transform="translate(0 0.5)"></rect>
+            </clipPath>
+          </defs>
+        </svg>
       </div>
-      <button class="try-beta button"> Try Beta Version</button>
-    </header>
-    <div class="section section-one" class="max-h-screen px-8">
-      <h1 class="hero hidden">
-        Generative Al <span id="heading-svg-thingy">
+      <div class="modal-body">
+
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="full"
+            name="name"
+            id="name"
+            placeholder="Name"
+          />
+
+        <label for="email" >E-mail</label>
+        <input
+          type="email"
+          class="full"
+          name="email"
+          id="email"
+          placeholder="E-mail"
+          required
+        />
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" required id="check" name="checkbox" />
+        <label for="checkbox"
+          >I have read and agree with the privacy policy and cookie policy*</label
+        >
+      </div>
+      <button class="form-button" type="submit">Send Request</button>
+    </form>
+    </div>
+
+  </div>
+</MainLayout>
+
+<section id="section-one-wrapper" class="section-full-height section-wrapper">
+  <header class="flex justify-between">
+    <div id="logo" class="flex items-center">
+      <div class="logo-svg rounded-[25px] flex justify-center items-center">
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 58 58"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_210_34)">
+            <path
+              d="M33 0H25C11.1929 0 0 11.1929 0 25V33C0 46.8071 11.1929 58 25 58H33C46.8071 58 58 46.8071 58 33V25C58 11.1929 46.8071 0 33 0Z"
+              fill="black"></path>
+            <g clip-path="url(#clip1_210_34)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M14 20C14 16.6863 16.6863 14 20 14H28V22C28 25.3137 25.3137 28 22 28H14V20Z"
+                fill="white"></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M44 38C44 41.3137 41.3137 44 38 44H30V36C30 32.6863 32.6863 30 36 30H44V38Z"
+                fill="white"></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20 44C16.6863 44 14 41.3137 14 38V30H22C25.3137 30 28 32.6863 28 36V44H20Z"
+                fill="white"></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M38 14C41.3137 14 44 16.6863 44 20V28H36C32.6863 28 30 25.3137 30 22V14H38Z"
+                fill="white"></path>
+            </g>
+          </g>
+          <defs>
+            <clipPath id="clip0_210_34">
+              <rect width="58" height="58" fill="white"></rect>
+            </clipPath>
+            <clipPath id="clip1_210_34">
+              <rect
+                width="30"
+                height="30"
+                fill="white"
+                transform="translate(14 14)"></rect>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div class="logo-text">‎ Rasp AI.</div>
+    </div>
+    <button class="try-beta modal-button button"> Try Beta Version</button>
+  </header>
+  <div class="section section-one" class="max-h-screen px-8">
+    <h1 class="hero hidden">
+      Generative Al <span id="heading-svg-thingy">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100%"
+          height="100%"
+          viewBox="0 0 168 69"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_1391_2007)">
+            <rect
+              width="168"
+              height="69"
+              rx="34.5"
+              fill="url(#paint0_linear_1391_2007)"></rect>
+            <mask
+              id="mask0_1391_2007"
+              style="mask-type:luminance"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="168"
+              height="69"
+            >
+              <rect width="100%" height="100%" rx="34.5" fill="white"></rect>
+            </mask>
+            <g mask="url(#mask0_1391_2007)"> </g>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M82.3417 -25.5887L104.129 -13.0404L91.5349 8.72071C86.3182 17.7344 74.7731 20.8279 65.7484 15.6302L43.9607 3.08185L56.5552 -18.6792C61.7719 -27.6929 73.317 -30.7864 82.3417 -25.5887Z"
+              fill="white"></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M84.6602 84.5887L62.8726 72.0404L75.467 50.2793C80.6838 41.2656 92.2288 38.1721 101.254 43.3698L123.041 55.9181L110.447 77.6792C105.23 86.6929 93.685 89.7864 84.6602 84.5887Z"
+              fill="white"></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M28.4468 30.6792L41.0412 8.91815L62.8289 21.4665C71.8536 26.6642 74.9406 38.1849 69.7238 47.1986L57.1294 68.9596L35.3417 56.4113C26.317 51.2136 23.23 39.6929 28.4468 30.6792Z"
+              fill="white"></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M139.555 28.3208L126.961 50.0819L105.173 37.5335C96.1483 32.3358 93.0614 20.8151 98.2782 11.8014L110.873 -9.95965L132.66 2.58872C141.685 7.78643 144.772 19.3071 139.555 28.3208Z"
+              fill="white"></path>
+          </g>
+          <defs>
+            <linearGradient
+              id="paint0_linear_1391_2007"
+              x1="168"
+              y1="0"
+              x2="0"
+              y2="0"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#FBFBFF"></stop>
+              <stop offset="0.374235" stop-color="#E4EBFD"></stop>
+              <stop offset="0.822197" stop-color="#FFF6FF"></stop>
+              <stop offset="1" stop-color="#F6F6FF"></stop>
+            </linearGradient>
+            <clipPath id="clip0_1391_2007">
+              <rect width="168" height="69" fill="white"></rect>
+            </clipPath>
+          </defs>
+        </svg>
+      </span>
+      <br />
+      powered platform
+    </h1>
+    <div id="left-one" class="flex flex-col justify-between">
+      <h1 class="hero">
+        Generative Al
+        <span id="heading-svg-thingy-large">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -75,9 +217,9 @@ import "../styles/main.css";
                 width="168"
                 height="69"
                 rx="34.5"
-                fill="url(#paint0_linear_1391_2007)"></rect>
+                fill="url(#paint0_linear_1391_2007_1)"></rect>
               <mask
-                id="mask0_1391_2007"
+                id="mask0_1391_2007_1"
                 style="mask-type:luminance"
                 maskUnits="userSpaceOnUse"
                 x="0"
@@ -87,7 +229,7 @@ import "../styles/main.css";
               >
                 <rect width="100%" height="100%" rx="34.5" fill="white"></rect>
               </mask>
-              <g mask="url(#mask0_1391_2007)"> </g>
+              <g mask="url(#mask0_1391_2007_1)"> </g>
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -111,7 +253,7 @@ import "../styles/main.css";
             </g>
             <defs>
               <linearGradient
-                id="paint0_linear_1391_2007"
+                id="paint0_linear_1391_2007_1"
                 x1="168"
                 y1="0"
                 x2="0"
@@ -129,362 +271,576 @@ import "../styles/main.css";
             </defs>
           </svg>
         </span>
-        <br>
-        powered platform
+        <br /> powered platform
       </h1>
-      <div id="left-one" class="flex flex-col justify-between">
-        <h1 class="hero">Generative Al
-          <span id="heading-svg-thingy-large">
+      <div class="left-bottom-one gap-3">
+        <div class="left-bottom-one-content w-full gap-3">
+          <div class="left-bottom-one-video flex flex-col self-end basis-[49%]">
+            <h2 class="hero inline-block">Watch Demo</h2>
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100%"
-              height="100%"
-              viewBox="0 0 168 69"
+              max-width="520"
+              viewBox="0 0 520 320"
               fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_1391_2007)">
-                <rect
-                  width="168"
-                  height="69"
-                  rx="34.5"
-                  fill="url(#paint0_linear_1391_2007_1)"></rect>
-                <mask
-                  id="mask0_1391_2007_1"
-                  style="mask-type:luminance"
-                  maskUnits="userSpaceOnUse"
-                  x="0"
-                  y="0"
-                  width="168"
-                  height="69"
-                >
-                  <rect width="100%" height="100%" rx="34.5" fill="white"></rect>
-                </mask>
-                <g mask="url(#mask0_1391_2007_1)"> </g>
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M82.3417 -25.5887L104.129 -13.0404L91.5349 8.72071C86.3182 17.7344 74.7731 20.8279 65.7484 15.6302L43.9607 3.08185L56.5552 -18.6792C61.7719 -27.6929 73.317 -30.7864 82.3417 -25.5887Z"
-                  fill="white"></path>
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M84.6602 84.5887L62.8726 72.0404L75.467 50.2793C80.6838 41.2656 92.2288 38.1721 101.254 43.3698L123.041 55.9181L110.447 77.6792C105.23 86.6929 93.685 89.7864 84.6602 84.5887Z"
-                  fill="white"></path>
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M28.4468 30.6792L41.0412 8.91815L62.8289 21.4665C71.8536 26.6642 74.9406 38.1849 69.7238 47.1986L57.1294 68.9596L35.3417 56.4113C26.317 51.2136 23.23 39.6929 28.4468 30.6792Z"
-                  fill="white"></path>
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M139.555 28.3208L126.961 50.0819L105.173 37.5335C96.1483 32.3358 93.0614 20.8151 98.2782 11.8014L110.873 -9.95965L132.66 2.58872C141.685 7.78643 144.772 19.3071 139.555 28.3208Z"
-                  fill="white"></path>
-              </g>
+              <rect width="520" height="320" rx="32" fill="#F7F9FF"></rect>
+              <circle
+                cx="260"
+                cy="181"
+                r="50"
+                fill="url(#paint0_linear_96_2122)"></circle>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M266.422 179.211C267.896 179.948 267.896 182.052 266.422 182.789L254.894 188.553C253.565 189.218 252 188.251 252 186.764V175.236C252 173.749 253.565 172.782 254.894 173.447L266.422 179.211Z"
+                fill="black"></path>
+              <circle cx="36" cy="36" r="6" fill="#E7E2F0"></circle>
+              <circle opacity="0.5" cx="54" cy="36" r="6" fill="#C1E8FF"
+              ></circle>
+              <circle opacity="0.5" cx="72" cy="36" r="6" fill="#D8D8D8"
+              ></circle>
               <defs>
                 <linearGradient
-                  id="paint0_linear_1391_2007_1"
-                  x1="168"
-                  y1="0"
-                  x2="0"
-                  y2="0"
+                  id="paint0_linear_96_2122"
+                  x1="185.246"
+                  y1="198.843"
+                  x2="268.525"
+                  y2="253.923"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#FBFBFF"></stop>
-                  <stop offset="0.374235" stop-color="#E4EBFD"></stop>
-                  <stop offset="0.822197" stop-color="#FFF6FF"></stop>
-                  <stop offset="1" stop-color="#F6F6FF"></stop>
+                  <stop stop-color="#D2EEFE"></stop>
+                  <stop offset="0.589024" stop-color="#F0F0FF"></stop>
+                  <stop offset="1" stop-color="#F7E9FE"></stop>
                 </linearGradient>
-                <clipPath id="clip0_1391_2007">
-                  <rect width="168" height="69" fill="white"></rect>
-                </clipPath>
               </defs>
             </svg>
-          </span>
-          <br /> powered platform</h1>
-        <div class="left-bottom-one gap-3">
-          <div class="left-bottom-one-content w-full gap-3">
-            <div
-              class="left-bottom-one-video flex flex-col self-end basis-[49%]"
-            >
-              <h2 class="hero inline-block">Watch Demo</h2>
+          </div>
+          <div class="left-bottom-one-tabs basis-[49%]">
+            <h2 class="hero">Values</h2>
+            <div class="card mb-3">
+              <div class="icon-and-h2 flex items-center gap-3">
+                <img src="icon-2.svg" alt="" />
+                <h2>Build better products</h2>
+              </div>
+              <p>
+                With all this saved time, you can focus on user testing and get
+                better products and better revenue
+              </p>
+            </div>
+            <div class="card mb-3">
+              <div class="icon-and-h2 flex items-center gap-3">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="1" y="1" width="22" height="22" rx="4" fill="#161516"
+                  ></rect>
+                  <path
+                    d="M7.03516 8.72217L5.10547 10.6525L7.03516 12.5822"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                  <path
+                    d="M16.9199 11.6973L18.8379 13.6159L16.9199 15.5338"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                  <path
+                    d="M10.3906 16.2925L13.5519 7.70752"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+                <h2>Develop faster</h2>
+              </div>
+              <p>
+                RASP outputs quality Swift and Java code, so you can save on
+                development time.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="icon-and-h2 flex items-center gap-3">
+                <img src="icon-3.svg" alt="" />
+                <h2>Build design faster</h2>
+              </div>
+              <p>
+                Just text RASP your edits and see implementation in real-time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="right-one"
+      class="flex relative items-center justify-center rounded-3xl"
+    >
+      <div id="loading-phone" class="flex justify-between">
+        <h3>Performing interface development…</h3>
+        <img src="layer-3d.png" alt="" srcset="" />
+      </div>
+      <div class="rounded-3xl iphone">
+        <img src="Group 271.svg" alt="" srcset="" />
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-two-wrapper" class="section-full-height section-wrapper">
+  <h1 class="section-heading">Features</h1>
+  <div class="section">
+    <div class="left-bottom-two grid-container">
+      <div class="grid-item grid-item-1">
+        <h2 class="grid-item-heading icon-and-h2">Real-time edits</h2>
+        <p>Just text RASP your edits and see implementation in real-time.</p>
+      </div>
+      <div class="grid-item grid-item-2">
+        <h2 class="grid-item-heading icon-and-h2">Export in Figma</h2>
+        <p>
+          For sophisticated users, feel free to export design to Figma and edit
+          it the way you want.
+        </p>
+        <button class="blacked modal-button only-desktop">
+          <!-- <img class="icon" src="public/" alt=""> -->
+          <svg
+            width="60"
+            height="60"
+            viewBox="0 0 60 60"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="60" height="60" rx="29" fill="white"></rect>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M15 21C15 17.6863 17.6863 15 21 15H29V22.8648C29 26.1785 26.3137 28.8648 23 28.8648H15L15 21Z"
+              fill="black"></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M45 38.71C45 42.0237 42.3137 44.71 39 44.71H31L31 36.8452C31 33.5315 33.6863 30.8452 37 30.8452L45 30.8452L45 38.71Z"
+              fill="black"></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21 44.71C17.6863 44.71 15 42.0237 15 38.71L15 30.8452L23 30.8452C26.3137 30.8452 29 33.5315 29 36.8452L29 44.71L21 44.71Z"
+              fill="black"></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M39 15C42.3137 15 45 17.6863 45 21V28.8648L37 28.8648C33.6863 28.8648 31 26.1785 31 22.8648L31 15L39 15Z"
+              fill="black"></path>
+          </svg>
+          <svg
+            class="button-gradient-svg"
+            width="60"
+            height="60"
+            viewBox="0 0 60 60"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 29C0 12.9837 12.9837 0 29 0H31C47.0163 0 60 12.9837 60 29V31C60 47.0163 47.0163 60 31 60H29C12.9837 60 0 47.0163 0 31V29Z"
+              fill="white"></path>
+            <path
+              d="M21 15C17.6863 15 15 17.6863 15 21V28.8648H23C26.3137 28.8648 29 26.1785 29 22.8648V15H21Z"
+              fill="black"></path>
+            <path
+              d="M21 15C17.6863 15 15 17.6863 15 21V28.8648H23C26.3137 28.8648 29 26.1785 29 22.8648V15H21Z"
+              fill="url(#paint0_linear_1704_1694-3)"></path>
+            <path
+              d="M39 44.7104C42.3137 44.7104 45 42.0242 45 38.7104V30.8457H37C33.6863 30.8457 31 33.532 31 36.8457V44.7104H39Z"
+              fill="black"></path>
+            <path
+              d="M39 44.7104C42.3137 44.7104 45 42.0242 45 38.7104V30.8457H37C33.6863 30.8457 31 33.532 31 36.8457V44.7104H39Z"
+              fill="url(#paint0_linear_1704_1694-3)"></path>
+            <path
+              d="M21 44.7104C17.6863 44.7104 15 42.0242 15 38.7104V30.8457H23C26.3137 30.8457 29 33.532 29 36.8457V44.7104H21Z"
+              fill="black"></path>
+            <path
+              d="M21 44.7104C17.6863 44.7104 15 42.0242 15 38.7104V30.8457H23C26.3137 30.8457 29 33.532 29 36.8457V44.7104H21Z"
+              fill="url(#paint0_linear_1704_1694-3)"></path>
+            <path
+              d="M45 21C45 17.6863 42.3137 15 39 15H31V22.8648C31 26.1785 33.6863 28.8648 37 28.8648H45V21Z"
+              fill="black"></path>
+            <path
+              d="M45 21C45 17.6863 42.3137 15 39 15H31V22.8648C31 26.1785 33.6863 28.8648 37 28.8648H45V21Z"
+              fill="url(#paint0_linear_1704_1694-3)"></path>
+            <defs>
+              <linearGradient
+                id="paint0_linear_1704_1694-3"
+                x1="35.5019"
+                y1="11.5679"
+                x2="15.3449"
+                y2="50.18"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#94D8FF"></stop>
+                <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+                <stop offset="1" stop-color="#E5B0FF"></stop>
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_1704_1694-3"
+                x1="35.5019"
+                y1="11.5679"
+                x2="15.3449"
+                y2="50.18"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#94D8FF"></stop>
+                <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+                <stop offset="1" stop-color="#E5B0FF"></stop>
+              </linearGradient>
+              <linearGradient
+                id="paint2_linear_1704_1694-3"
+                x1="35.5019"
+                y1="11.5679"
+                x2="15.3449"
+                y2="50.18"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#94D8FF"></stop>
+                <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+                <stop offset="1" stop-color="#E5B0FF"></stop>
+              </linearGradient>
+              <linearGradient
+                id="paint3_linear_1704_1694-3"
+                x1="35.5019"
+                y1="11.5679"
+                x2="15.3449"
+                y2="50.18"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#94D8FF"></stop>
+                <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+                <stop offset="1" stop-color="#E5B0FF"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <span class="padded-button-text grow text-center">
+            Try Beta Version</span
+          >
+        </button>
+      </div>
+      <div class="grid-item grid-item-3">
+        <div class="icon-holder-for-item-3 flex grow">
+          <div class="icon-holder-deep w-full flex gap-4 self-start">
+            <div class="svg-wrap-hover basis-[30%] min-w-[60px]">
               <svg
-                max-width="520"
-                viewBox="0 0 520 320"
+                width="100%"
+                height="100%"
+                viewBox="0 0 112 112"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <rect width="520" height="320" rx="32" fill="#F7F9FF"></rect>
-                <circle
-                  cx="260"
-                  cy="181"
-                  r="50"
-                  fill="url(#paint0_linear_96_2122)"></circle>
+                <rect width="112" height="112" rx="24" fill="white"></rect>
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M266.422 179.211C267.896 179.948 267.896 182.052 266.422 182.789L254.894 188.553C253.565 189.218 252 188.251 252 186.764V175.236C252 173.749 253.565 172.782 254.894 173.447L266.422 179.211Z"
+                  d="M64.3604 24C96.0089 45.4204 85.7719 69.0426 85.7719 69.0426C85.7719 69.0426 94.7715 79.1557 91.1342 88C91.1342 88 87.4219 81.8052 81.1972 81.8052C75.1974 81.8052 71.6726 88 59.5982 88C32.7119 88 20 65.6467 20 65.6467C44.2239 81.5067 60.7606 70.2741 60.7606 70.2741C49.8486 63.9674 26.6372 33.8146 26.6372 33.8146C46.8487 50.9434 55.5858 55.4589 55.5858 55.4589C50.3736 51.1673 35.7493 30.1948 35.7493 30.1948C47.4487 41.9872 70.6976 58.4443 70.6976 58.4443C77.2973 40.2332 64.3604 24 64.3604 24Z"
                   fill="black"></path>
-                <circle cx="36" cy="36" r="6" fill="#E7E2F0"></circle>
-                <circle opacity="0.5" cx="54" cy="36" r="6" fill="#C1E8FF"
-                ></circle>
-                <circle opacity="0.5" cx="72" cy="36" r="6" fill="#D8D8D8"
-                ></circle>
+              </svg>
+              <svg
+                class="gradiented"
+                width="100%"
+                height="100%"
+                viewBox="0 0 144 144"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 28C0 12.536 12.536 0 28 0H116C131.464 0 144 12.536 144 28V116C144 131.464 131.464 144 116 144H28C12.536 144 0 131.464 0 116V28Z"
+                  fill="white"></path>
+                <path
+                  d="M82.4505 32C122.011 58.7755 109.215 88.3032 109.215 88.3032C109.215 88.3032 120.464 100.945 115.918 112C115.918 112 111.277 104.257 103.496 104.257C95.9968 104.257 91.5907 112 76.4977 112C42.8899 112 27 84.0583 27 84.0583C57.2798 103.883 77.9508 89.8426 77.9508 89.8426C64.3108 81.9592 35.2965 44.2682 35.2965 44.2682C60.5609 65.6793 71.4823 71.3236 71.4823 71.3236C64.967 65.9592 46.6866 39.7434 46.6866 39.7434C61.3109 54.484 90.372 75.0554 90.372 75.0554C98.6217 52.2915 82.4505 32 82.4505 32Z"
+                  fill="black"></path>
+                <path
+                  d="M82.4505 32C122.011 58.7755 109.215 88.3032 109.215 88.3032C109.215 88.3032 120.464 100.945 115.918 112C115.918 112 111.277 104.257 103.496 104.257C95.9968 104.257 91.5907 112 76.4977 112C42.8899 112 27 84.0583 27 84.0583C57.2798 103.883 77.9508 89.8426 77.9508 89.8426C64.3108 81.9592 35.2965 44.2682 35.2965 44.2682C60.5609 65.6793 71.4823 71.3236 71.4823 71.3236C64.967 65.9592 46.6866 39.7434 46.6866 39.7434C61.3109 54.484 90.372 75.0554 90.372 75.0554C98.6217 52.2915 82.4505 32 82.4505 32Z"
+                  fill="url(#paint0_linear_1702_1690)"></path>
                 <defs>
                   <linearGradient
-                    id="paint0_linear_96_2122"
-                    x1="185.246"
-                    y1="198.843"
-                    x2="268.525"
-                    y2="253.923"
+                    id="paint0_linear_1702_1690"
+                    x1="4.72111"
+                    y1="86.2747"
+                    x2="74.0675"
+                    y2="137.872"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#D2EEFE"></stop>
-                    <stop offset="0.589024" stop-color="#F0F0FF"></stop>
-                    <stop offset="1" stop-color="#F7E9FE"></stop>
+                    <stop stop-color="#94D8FF"></stop>
+                    <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+                    <stop offset="1" stop-color="#E5B0FF"></stop>
                   </linearGradient>
                 </defs>
               </svg>
             </div>
-            <div class="left-bottom-one-tabs basis-[49%]">
-              <h2 class="hero">Values</h2>
-              <div class="card mb-3">
-                <div class="icon-and-h2 flex items-center gap-3">
-                  <img src="icon-2.svg" alt="" />
-                  <h2>Build better products</h2>
-                </div>
-                <p>
-                  With all this saved time, you can focus on user testing and
-                  get better products and better revenue
-                </p>
-              </div>
-              <div class="card mb-3">
-                <div class="icon-and-h2 flex items-center gap-3">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x="1"
-                      y="1"
-                      width="22"
-                      height="22"
-                      rx="4"
-                      fill="#161516"></rect>
-                    <path
-                      d="M7.03516 8.72217L5.10547 10.6525L7.03516 12.5822"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                    <path
-                      d="M16.9199 11.6973L18.8379 13.6159L16.9199 15.5338"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                    <path
-                      d="M10.3906 16.2925L13.5519 7.70752"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
-                  <h2>Develop faster</h2>
-                </div>
-                <p>
-                  RASP outputs quality Swift and Java code, so you can save on
-                  development time.
-                </p>
-              </div>
-
-              <div class="card">
-                <div class="icon-and-h2 flex items-center gap-3">
-                  <img src="icon-3.svg" alt="" />
-                  <h2>Build design faster</h2>
-                </div>
-                <p>
-                  Just text RASP your edits and see implementation in real-time.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        id="right-one"
-        class="flex relative items-center justify-center rounded-3xl"
-      >
-        <div id="loading-phone" class="flex justify-between">
-          <h3>Performing interface development…</h3>
-          <img src="layer-3d.png" alt="" srcset="" />
-        </div>
-        <div class="rounded-3xl iphone">
-          <img src="Group 271.svg" alt="" srcset="" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="section-two-wrapper" class=" section-full-height section-wrapper">
-    <h1 class="section-heading">Features</h1>
-    <div class="section">
-      <div class="left-bottom-two grid-container">
-        <div class="grid-item grid-item-1">
-          <h2 class="grid-item-heading icon-and-h2">Real-time edits</h2>
-          <p>Just text RASP your edits and see implementation in real-time.</p>
-        </div>
-        <div class="grid-item grid-item-2">
-          <h2 class="grid-item-heading icon-and-h2">Export in Figma</h2>
-          <p>
-            For sophisticated users, feel free to export design to Figma and
-            edit it the way you want.
-          </p>
-          <button class="blacked only-desktop">
-            <!-- <img class="icon" src="public/" alt=""> -->
-            <svg
-              width="60"
-              height="60"
-              viewBox="0 0 60 60"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-
-              <rect width="60" height="60" rx="29" fill="white"></rect>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M15 21C15 17.6863 17.6863 15 21 15H29V22.8648C29 26.1785 26.3137 28.8648 23 28.8648H15L15 21Z"
-                fill="black"></path>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M45 38.71C45 42.0237 42.3137 44.71 39 44.71H31L31 36.8452C31 33.5315 33.6863 30.8452 37 30.8452L45 30.8452L45 38.71Z"
-                fill="black"></path>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M21 44.71C17.6863 44.71 15 42.0237 15 38.71L15 30.8452L23 30.8452C26.3137 30.8452 29 33.5315 29 36.8452L29 44.71L21 44.71Z"
-                fill="black"></path>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M39 15C42.3137 15 45 17.6863 45 21V28.8648L37 28.8648C33.6863 28.8648 31 26.1785 31 22.8648L31 15L39 15Z"
-                fill="black"></path>
-
-
-            </svg>
-            <svg class="button-gradient-svg" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 29C0 12.9837 12.9837 0 29 0H31C47.0163 0 60 12.9837 60 29V31C60 47.0163 47.0163 60 31 60H29C12.9837 60 0 47.0163 0 31V29Z" fill="white"/>
-              <path d="M21 15C17.6863 15 15 17.6863 15 21V28.8648H23C26.3137 28.8648 29 26.1785 29 22.8648V15H21Z" fill="black"/>
-              <path d="M21 15C17.6863 15 15 17.6863 15 21V28.8648H23C26.3137 28.8648 29 26.1785 29 22.8648V15H21Z" fill="url(#paint0_linear_1704_1694-3)"/>
-              <path d="M39 44.7104C42.3137 44.7104 45 42.0242 45 38.7104V30.8457H37C33.6863 30.8457 31 33.532 31 36.8457V44.7104H39Z" fill="black"/>
-              <path d="M39 44.7104C42.3137 44.7104 45 42.0242 45 38.7104V30.8457H37C33.6863 30.8457 31 33.532 31 36.8457V44.7104H39Z" fill="url(#paint0_linear_1704_1694-3)"/>
-              <path d="M21 44.7104C17.6863 44.7104 15 42.0242 15 38.7104V30.8457H23C26.3137 30.8457 29 33.532 29 36.8457V44.7104H21Z" fill="black"/>
-              <path d="M21 44.7104C17.6863 44.7104 15 42.0242 15 38.7104V30.8457H23C26.3137 30.8457 29 33.532 29 36.8457V44.7104H21Z" fill="url(#paint0_linear_1704_1694-3)"/>
-              <path d="M45 21C45 17.6863 42.3137 15 39 15H31V22.8648C31 26.1785 33.6863 28.8648 37 28.8648H45V21Z" fill="black"/>
-              <path d="M45 21C45 17.6863 42.3137 15 39 15H31V22.8648C31 26.1785 33.6863 28.8648 37 28.8648H45V21Z" fill="url(#paint0_linear_1704_1694-3)"/>
-              <defs>
-              <linearGradient id="paint0_linear_1704_1694-3" x1="35.5019" y1="11.5679" x2="15.3449" y2="50.18" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#94D8FF"/>
-              <stop offset="0.589024" stop-color="#A5A5FF"/>
-              <stop offset="1" stop-color="#E5B0FF"/>
-              </linearGradient>
-              <linearGradient id="paint1_linear_1704_1694-3" x1="35.5019" y1="11.5679" x2="15.3449" y2="50.18" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#94D8FF"/>
-              <stop offset="0.589024" stop-color="#A5A5FF"/>
-              <stop offset="1" stop-color="#E5B0FF"/>
-              </linearGradient>
-              <linearGradient id="paint2_linear_1704_1694-3" x1="35.5019" y1="11.5679" x2="15.3449" y2="50.18" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#94D8FF"/>
-              <stop offset="0.589024" stop-color="#A5A5FF"/>
-              <stop offset="1" stop-color="#E5B0FF"/>
-              </linearGradient>
-              <linearGradient id="paint3_linear_1704_1694-3" x1="35.5019" y1="11.5679" x2="15.3449" y2="50.18" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#94D8FF"/>
-              <stop offset="0.589024" stop-color="#A5A5FF"/>
-              <stop offset="1" stop-color="#E5B0FF"/>
-              </linearGradient>
-              </defs>
+            <div class="svg-wrap-hover basis-[30%] min-w-[60px]">
+              <svg
+                class=""
+                width="100%"
+                height="100%"
+                viewBox="0 0 112 112"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="112" height="112" rx="24" fill="white"></rect>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M73.0042 74.6416C87.9642 66.8937 81.0181 59.4137 76.2094 60.3494C75.0094 60.6172 74.4702 60.8833 74.4702 60.8833C74.4702 60.8833 74.8702 60.0833 75.8059 59.8155C85.2894 56.4764 92.7711 69.8329 72.7328 75.0433C72.7328 75.0433 72.8668 74.9094 73.0007 74.6433L73.0042 74.6416ZM41.7442 64.7563C32.3946 63.5545 46.9546 60.0815 46.9546 60.0815V60.0624C46.9546 60.0624 41.2103 59.6798 34.2642 63.0189C26.1146 67.0276 54.5668 68.7615 69.3946 64.8885C70.8625 63.9545 73.0016 63.0189 73.0016 63.0189C73.0016 63.0189 66.9894 64.0885 60.979 64.6224C53.6329 65.1563 45.7511 65.2902 41.7442 64.7563ZM43.4802 69.1682L43.4843 69.1651V69.1668L43.4802 69.1682ZM43.4802 69.1682C43.3524 69.2672 40.2507 71.715 45.3538 72.2381C52.166 72.9059 57.5277 73.0381 66.7277 71.1703C66.7277 71.1703 67.9277 72.5059 69.933 73.1738C51.1 78.7836 29.9963 73.7087 43.4802 69.1682ZM45.4755 77.854L45.4872 77.8467L45.4889 77.8502L45.4755 77.854ZM45.4755 77.854C45.2745 77.981 42.6038 79.7358 47.6263 80.2519C53.8872 81.0519 57.2437 80.9198 64.1898 79.5841C64.1898 79.5841 66.0594 80.7841 68.5985 81.7232C52.9746 88.3991 33.2146 81.3284 45.4755 77.854ZM80.3532 84.3928C80.3532 84.3928 82.6245 86.2624 77.8141 87.7319C68.8645 90.4033 40.2784 91.205 32.2628 87.7319C29.4576 86.5319 34.8019 84.7754 36.5376 84.5267C38.2767 84.1267 39.2089 84.1267 39.2089 84.1267C36.1376 81.9876 18.7706 88.5354 30.3915 90.3876C62.3167 95.5963 88.6315 88.1163 80.3498 84.3772L80.3532 84.3928ZM85.4287 88.3997C84.8966 95.2119 62.8531 96.6815 48.427 95.7458V95.7476C38.94 95.2119 37.0705 93.6084 37.0705 93.6084C46.0235 95.078 61.2514 95.3458 73.54 93.0745C84.3609 91.071 85.4287 88.3997 85.4287 88.3997Z"
+                  fill="black"></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M56.0389 37.1058C72.2024 24.4171 63.9206 15.9998 63.9206 15.9998H63.9189C66.1462 24.8207 60.1729 29.5407 54.3223 34.1637C51.4017 36.4715 48.5117 38.7552 46.6876 41.5128C42.9484 47.125 48.425 53.1354 56.0389 59.9476C55.3707 58.4384 54.3428 56.97 53.3015 55.4824C49.735 50.3874 46.0104 45.0667 56.0389 37.1058ZM58.5763 62.7546C58.5763 62.7546 63.5189 58.7459 59.6459 54.3372L59.6441 54.3354C46.5519 39.2415 73.9363 32.4294 73.9363 32.4294C57.3597 41.9945 59.5313 45.1067 63.3637 50.5989C63.5457 50.8596 63.7313 51.1257 63.9189 51.3981C68.4615 57.6763 58.5763 62.7546 58.5763 62.7546Z"
+                  fill="black"></path>
               </svg>
 
-            <span class="padded-button-text grow text-center"> Try Beta Version</span>
-          </button>
-        </div>
-        <div class="grid-item grid-item-3">
-          <div class="icon-holder-for-item-3 flex grow">
-            <div class="icon-holder-deep w-full flex gap-4 self-start">
-              <div class="svg-wrap-hover basis-[30%] min-w-[60px]">
-                <svg width="100%" height="100%" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="112" height="112" rx="24" fill="white"/>
-                  <path d="M64.3604 24C96.0089 45.4204 85.7719 69.0426 85.7719 69.0426C85.7719 69.0426 94.7715 79.1557 91.1342 88C91.1342 88 87.4219 81.8052 81.1972 81.8052C75.1974 81.8052 71.6726 88 59.5982 88C32.7119 88 20 65.6467 20 65.6467C44.2239 81.5067 60.7606 70.2741 60.7606 70.2741C49.8486 63.9674 26.6372 33.8146 26.6372 33.8146C46.8487 50.9434 55.5858 55.4589 55.5858 55.4589C50.3736 51.1673 35.7493 30.1948 35.7493 30.1948C47.4487 41.9872 70.6976 58.4443 70.6976 58.4443C77.2973 40.2332 64.3604 24 64.3604 24Z" fill="black"/>
-                  </svg>
-                  <svg class="gradiented" width="100%" height="100%" viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 28C0 12.536 12.536 0 28 0H116C131.464 0 144 12.536 144 28V116C144 131.464 131.464 144 116 144H28C12.536 144 0 131.464 0 116V28Z" fill="white"/>
-                    <path d="M82.4505 32C122.011 58.7755 109.215 88.3032 109.215 88.3032C109.215 88.3032 120.464 100.945 115.918 112C115.918 112 111.277 104.257 103.496 104.257C95.9968 104.257 91.5907 112 76.4977 112C42.8899 112 27 84.0583 27 84.0583C57.2798 103.883 77.9508 89.8426 77.9508 89.8426C64.3108 81.9592 35.2965 44.2682 35.2965 44.2682C60.5609 65.6793 71.4823 71.3236 71.4823 71.3236C64.967 65.9592 46.6866 39.7434 46.6866 39.7434C61.3109 54.484 90.372 75.0554 90.372 75.0554C98.6217 52.2915 82.4505 32 82.4505 32Z" fill="black"/>
-                    <path d="M82.4505 32C122.011 58.7755 109.215 88.3032 109.215 88.3032C109.215 88.3032 120.464 100.945 115.918 112C115.918 112 111.277 104.257 103.496 104.257C95.9968 104.257 91.5907 112 76.4977 112C42.8899 112 27 84.0583 27 84.0583C57.2798 103.883 77.9508 89.8426 77.9508 89.8426C64.3108 81.9592 35.2965 44.2682 35.2965 44.2682C60.5609 65.6793 71.4823 71.3236 71.4823 71.3236C64.967 65.9592 46.6866 39.7434 46.6866 39.7434C61.3109 54.484 90.372 75.0554 90.372 75.0554C98.6217 52.2915 82.4505 32 82.4505 32Z" fill="url(#paint0_linear_1702_1690)"/>
-                    <defs>
-                    <linearGradient id="paint0_linear_1702_1690" x1="4.72111" y1="86.2747" x2="74.0675" y2="137.872" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#94D8FF"/>
-                    <stop offset="0.589024" stop-color="#A5A5FF"/>
-                    <stop offset="1" stop-color="#E5B0FF"/>
-                    </linearGradient>
-                    </defs>
-                    </svg>
-
-              </div>
-              <div class="svg-wrap-hover basis-[30%] min-w-[60px]">
-                <svg class="" width="100%" height="100%" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="112" height="112" rx="24" fill="white"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M73.0042 74.6416C87.9642 66.8937 81.0181 59.4137 76.2094 60.3494C75.0094 60.6172 74.4702 60.8833 74.4702 60.8833C74.4702 60.8833 74.8702 60.0833 75.8059 59.8155C85.2894 56.4764 92.7711 69.8329 72.7328 75.0433C72.7328 75.0433 72.8668 74.9094 73.0007 74.6433L73.0042 74.6416ZM41.7442 64.7563C32.3946 63.5545 46.9546 60.0815 46.9546 60.0815V60.0624C46.9546 60.0624 41.2103 59.6798 34.2642 63.0189C26.1146 67.0276 54.5668 68.7615 69.3946 64.8885C70.8625 63.9545 73.0016 63.0189 73.0016 63.0189C73.0016 63.0189 66.9894 64.0885 60.979 64.6224C53.6329 65.1563 45.7511 65.2902 41.7442 64.7563ZM43.4802 69.1682L43.4843 69.1651V69.1668L43.4802 69.1682ZM43.4802 69.1682C43.3524 69.2672 40.2507 71.715 45.3538 72.2381C52.166 72.9059 57.5277 73.0381 66.7277 71.1703C66.7277 71.1703 67.9277 72.5059 69.933 73.1738C51.1 78.7836 29.9963 73.7087 43.4802 69.1682ZM45.4755 77.854L45.4872 77.8467L45.4889 77.8502L45.4755 77.854ZM45.4755 77.854C45.2745 77.981 42.6038 79.7358 47.6263 80.2519C53.8872 81.0519 57.2437 80.9198 64.1898 79.5841C64.1898 79.5841 66.0594 80.7841 68.5985 81.7232C52.9746 88.3991 33.2146 81.3284 45.4755 77.854ZM80.3532 84.3928C80.3532 84.3928 82.6245 86.2624 77.8141 87.7319C68.8645 90.4033 40.2784 91.205 32.2628 87.7319C29.4576 86.5319 34.8019 84.7754 36.5376 84.5267C38.2767 84.1267 39.2089 84.1267 39.2089 84.1267C36.1376 81.9876 18.7706 88.5354 30.3915 90.3876C62.3167 95.5963 88.6315 88.1163 80.3498 84.3772L80.3532 84.3928ZM85.4287 88.3997C84.8966 95.2119 62.8531 96.6815 48.427 95.7458V95.7476C38.94 95.2119 37.0705 93.6084 37.0705 93.6084C46.0235 95.078 61.2514 95.3458 73.54 93.0745C84.3609 91.071 85.4287 88.3997 85.4287 88.3997Z" fill="black"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M56.0389 37.1058C72.2024 24.4171 63.9206 15.9998 63.9206 15.9998H63.9189C66.1462 24.8207 60.1729 29.5407 54.3223 34.1637C51.4017 36.4715 48.5117 38.7552 46.6876 41.5128C42.9484 47.125 48.425 53.1354 56.0389 59.9476C55.3707 58.4384 54.3428 56.97 53.3015 55.4824C49.735 50.3874 46.0104 45.0667 56.0389 37.1058ZM58.5763 62.7546C58.5763 62.7546 63.5189 58.7459 59.6459 54.3372L59.6441 54.3354C46.5519 39.2415 73.9363 32.4294 73.9363 32.4294C57.3597 41.9945 59.5313 45.1067 63.3637 50.5989C63.5457 50.8596 63.7313 51.1257 63.9189 51.3981C68.4615 57.6763 58.5763 62.7546 58.5763 62.7546Z" fill="black"/>
-                  </svg>
-
-                <svg class="gradiented" width="100%" height="100%" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="112" height="112" rx="24" fill="white"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M73.0042 74.6416C87.9642 66.8937 81.0181 59.4137 76.2094 60.3494C75.0094 60.6172 74.4702 60.8833 74.4702 60.8833C74.4702 60.8833 74.8702 60.0833 75.8059 59.8155C85.2894 56.4764 92.7711 69.8329 72.7328 75.0433C72.7328 75.0433 72.8668 74.9094 73.0007 74.6433L73.0042 74.6416ZM41.7442 64.7563C32.3946 63.5545 46.9546 60.0815 46.9546 60.0815V60.0624C46.9546 60.0624 41.2103 59.6798 34.2642 63.0189C26.1146 67.0276 54.5668 68.7615 69.3946 64.8885C70.8625 63.9545 73.0016 63.0189 73.0016 63.0189C73.0016 63.0189 66.9894 64.0885 60.979 64.6224C53.6329 65.1563 45.7511 65.2902 41.7442 64.7563ZM43.4802 69.1682L43.4843 69.1651V69.1668L43.4802 69.1682ZM43.4802 69.1682C43.3524 69.2672 40.2507 71.715 45.3538 72.2381C52.166 72.9059 57.5277 73.0381 66.7277 71.1703C66.7277 71.1703 67.9277 72.5059 69.933 73.1738C51.1 78.7836 29.9963 73.7087 43.4802 69.1682ZM45.4755 77.854L45.4872 77.8467L45.4889 77.8502L45.4755 77.854ZM45.4755 77.854C45.2745 77.981 42.6038 79.7358 47.6263 80.2519C53.8872 81.0519 57.2437 80.9198 64.1898 79.5841C64.1898 79.5841 66.0594 80.7841 68.5985 81.7232C52.9746 88.3991 33.2146 81.3284 45.4755 77.854ZM80.3532 84.3928C80.3532 84.3928 82.6245 86.2624 77.8141 87.7319C68.8645 90.4033 40.2784 91.205 32.2628 87.7319C29.4576 86.5319 34.8019 84.7754 36.5376 84.5267C38.2767 84.1267 39.2089 84.1267 39.2089 84.1267C36.1376 81.9876 18.7706 88.5354 30.3915 90.3876C62.3167 95.5963 88.6315 88.1163 80.3498 84.3772L80.3532 84.3928ZM85.4287 88.3997C84.8966 95.2119 62.8531 96.6815 48.427 95.7458V95.7476C38.94 95.2119 37.0705 93.6084 37.0705 93.6084C46.0235 95.078 61.2514 95.3458 73.54 93.0745C84.3609 91.071 85.4287 88.3997 85.4287 88.3997Z" fill="url(#paint0_linear_1342_1815-1)"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M56.0389 37.1058C72.2024 24.4171 63.9206 15.9998 63.9206 15.9998H63.9189C66.1462 24.8207 60.1729 29.5407 54.3223 34.1637C51.4017 36.4715 48.5117 38.7552 46.6876 41.5128C42.9484 47.125 48.425 53.1354 56.0389 59.9476C55.3707 58.4384 54.3428 56.97 53.3015 55.4824C49.735 50.3874 46.0104 45.0667 56.0389 37.1058ZM58.5763 62.7546C58.5763 62.7546 63.5189 58.7459 59.6459 54.3372L59.6441 54.3354C46.5519 39.2415 73.9363 32.4294 73.9363 32.4294C57.3597 41.9945 59.5313 45.1067 63.3637 50.5989C63.5457 50.8596 63.7313 51.1257 63.9189 51.3981C68.4615 57.6763 58.5763 62.7546 58.5763 62.7546Z" fill="url(#paint0_linear_1342_1815-1)"/>
-                  <defs>
-                    <linearGradient id="paint0_linear_1342_1815-1" x1="-9.80346" y1="64.2747" x2="56.8203" y2="108.338" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#94D8FF"/>
-                    <stop offset="0.589024" stop-color="#A5A5FF"/>
-                    <stop offset="1" stop-color="#E5B0FF"/>
-                    </linearGradient>
-                    </defs>
-                  </svg>
-
-              </div>
+              <svg
+                class="gradiented"
+                width="100%"
+                height="100%"
+                viewBox="0 0 112 112"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="112" height="112" rx="24" fill="white"></rect>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M73.0042 74.6416C87.9642 66.8937 81.0181 59.4137 76.2094 60.3494C75.0094 60.6172 74.4702 60.8833 74.4702 60.8833C74.4702 60.8833 74.8702 60.0833 75.8059 59.8155C85.2894 56.4764 92.7711 69.8329 72.7328 75.0433C72.7328 75.0433 72.8668 74.9094 73.0007 74.6433L73.0042 74.6416ZM41.7442 64.7563C32.3946 63.5545 46.9546 60.0815 46.9546 60.0815V60.0624C46.9546 60.0624 41.2103 59.6798 34.2642 63.0189C26.1146 67.0276 54.5668 68.7615 69.3946 64.8885C70.8625 63.9545 73.0016 63.0189 73.0016 63.0189C73.0016 63.0189 66.9894 64.0885 60.979 64.6224C53.6329 65.1563 45.7511 65.2902 41.7442 64.7563ZM43.4802 69.1682L43.4843 69.1651V69.1668L43.4802 69.1682ZM43.4802 69.1682C43.3524 69.2672 40.2507 71.715 45.3538 72.2381C52.166 72.9059 57.5277 73.0381 66.7277 71.1703C66.7277 71.1703 67.9277 72.5059 69.933 73.1738C51.1 78.7836 29.9963 73.7087 43.4802 69.1682ZM45.4755 77.854L45.4872 77.8467L45.4889 77.8502L45.4755 77.854ZM45.4755 77.854C45.2745 77.981 42.6038 79.7358 47.6263 80.2519C53.8872 81.0519 57.2437 80.9198 64.1898 79.5841C64.1898 79.5841 66.0594 80.7841 68.5985 81.7232C52.9746 88.3991 33.2146 81.3284 45.4755 77.854ZM80.3532 84.3928C80.3532 84.3928 82.6245 86.2624 77.8141 87.7319C68.8645 90.4033 40.2784 91.205 32.2628 87.7319C29.4576 86.5319 34.8019 84.7754 36.5376 84.5267C38.2767 84.1267 39.2089 84.1267 39.2089 84.1267C36.1376 81.9876 18.7706 88.5354 30.3915 90.3876C62.3167 95.5963 88.6315 88.1163 80.3498 84.3772L80.3532 84.3928ZM85.4287 88.3997C84.8966 95.2119 62.8531 96.6815 48.427 95.7458V95.7476C38.94 95.2119 37.0705 93.6084 37.0705 93.6084C46.0235 95.078 61.2514 95.3458 73.54 93.0745C84.3609 91.071 85.4287 88.3997 85.4287 88.3997Z"
+                  fill="url(#paint0_linear_1342_1815-1)"></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M56.0389 37.1058C72.2024 24.4171 63.9206 15.9998 63.9206 15.9998H63.9189C66.1462 24.8207 60.1729 29.5407 54.3223 34.1637C51.4017 36.4715 48.5117 38.7552 46.6876 41.5128C42.9484 47.125 48.425 53.1354 56.0389 59.9476C55.3707 58.4384 54.3428 56.97 53.3015 55.4824C49.735 50.3874 46.0104 45.0667 56.0389 37.1058ZM58.5763 62.7546C58.5763 62.7546 63.5189 58.7459 59.6459 54.3372L59.6441 54.3354C46.5519 39.2415 73.9363 32.4294 73.9363 32.4294C57.3597 41.9945 59.5313 45.1067 63.3637 50.5989C63.5457 50.8596 63.7313 51.1257 63.9189 51.3981C68.4615 57.6763 58.5763 62.7546 58.5763 62.7546Z"
+                  fill="url(#paint0_linear_1342_1815-1)"></path>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_1342_1815-1"
+                    x1="-9.80346"
+                    y1="64.2747"
+                    x2="56.8203"
+                    y2="108.338"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#94D8FF"></stop>
+                    <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+                    <stop offset="1" stop-color="#E5B0FF"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
             </div>
           </div>
-          <h2 class="grid-item-heading">Export to Swift/Java.</h2>
-          <p>
-            For sophisticated users, feel free to export design to Figma and
-            edit it the way you want
-          </p>
         </div>
-        <div class="grid-item grid-item-4">
-          <h2 class="grid-item-heading">Instant prototypes</h2>
-          <p>
-            Because RASP is powered by code, you get prototype automatically.
-          </p>
-        </div>
+        <h2 class="grid-item-heading">Export to Swift/Java.</h2>
+        <p>
+          For sophisticated users, feel free to export design to Figma and edit
+          it the way you want
+        </p>
       </div>
-      <div
-        id="right-one"
-        class="flex only-desktop relative items-center justify-center rounded-3xl"
-      >
-        <div id="loading-phone" class="flex justify-between">
-          <h3>Performing interface development…</h3>
-          <img src="layer-3d.png" alt="" srcset="" />
-        </div>
-        <div class="rounded-3xl iphone">
-          <img src="Group 271.svg" alt="" srcset="" />
-        </div>
+      <div class="grid-item grid-item-4">
+        <h2 class="grid-item-heading">Instant prototypes</h2>
+        <p>Because RASP is powered by code, you get prototype automatically.</p>
       </div>
     </div>
-    <button class="blacked hidden not-absolute">
+    <div
+      id="right-one"
+      class="flex only-desktop relative items-center justify-center rounded-3xl"
+    >
+      <div id="loading-phone" class="flex justify-between">
+        <h3>Performing interface development…</h3>
+        <img src="layer-3d.png" alt="" srcset="" />
+      </div>
+      <div class="rounded-3xl iphone">
+        <img src="Group 271.svg" alt="" srcset="" />
+      </div>
+    </div>
+  </div>
+  <button class="blacked modal-button hidden not-absolute">
+    <!-- <img class="icon" src="public/" alt=""> -->
+    <svg
+      width="60"
+      height="60"
+      viewBox="0 0 60 60"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="60" height="60" rx="29" fill="white"></rect>
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M15 21C15 17.6863 17.6863 15 21 15H29V22.8648C29 26.1785 26.3137 28.8648 23 28.8648H15L15 21Z"
+        fill="black"></path>
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M45 38.71C45 42.0237 42.3137 44.71 39 44.71H31L31 36.8452C31 33.5315 33.6863 30.8452 37 30.8452L45 30.8452L45 38.71Z"
+        fill="black"></path>
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M21 44.71C17.6863 44.71 15 42.0237 15 38.71L15 30.8452L23 30.8452C26.3137 30.8452 29 33.5315 29 36.8452L29 44.71L21 44.71Z"
+        fill="black"></path>
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M39 15C42.3137 15 45 17.6863 45 21V28.8648L37 28.8648C33.6863 28.8648 31 26.1785 31 22.8648L31 15L39 15Z"
+        fill="black"></path>
+    </svg>
+    <svg
+      class="button-gradient-svg"
+      width="60"
+      height="60"
+      viewBox="0 0 60 60"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 29C0 12.9837 12.9837 0 29 0H31C47.0163 0 60 12.9837 60 29V31C60 47.0163 47.0163 60 31 60H29C12.9837 60 0 47.0163 0 31V29Z"
+        fill="white"></path>
+      <!-- <path d="M21 15C17.6863 15 15 17.6863 15 21V28.8648H23C26.3137 28.8648 29 26.1785 29 22.8648V15H21Z" fill="url(#paint2_linear_1704_1694-2)"/> -->
+      <path
+        d="M21 15C17.6863 15 15 17.6863 15 21V28.8648H23C26.3137 28.8648 29 26.1785 29 22.8648V15H21Z"
+        fill="url(#paint0_linear_1704_1694-2)"></path>
+      <path
+        d="M39 44.7104C42.3137 44.7104 45 42.0242 45 38.7104V30.8457H37C33.6863 30.8457 31 33.532 31 36.8457V44.7104H39Z"
+        fill="url(#paint2_linear_1704_1694-2)"></path>
+      <path
+        d="M39 44.7104C42.3137 44.7104 45 42.0242 45 38.7104V30.8457H37C33.6863 30.8457 31 33.532 31 36.8457V44.7104H39Z"
+        fill="url(#paint1_linear_1704_1694-2)"></path>
+      <path
+        d="M21 44.7104C17.6863 44.7104 15 42.0242 15 38.7104V30.8457H23C26.3137 30.8457 29 33.532 29 36.8457V44.7104H21Z"
+        fill="url(#paint2_linear_1704_1694-2)"></path>
+      <path
+        d="M21 44.7104C17.6863 44.7104 15 42.0242 15 38.7104V30.8457H23C26.3137 30.8457 29 33.532 29 36.8457V44.7104H21Z"
+        fill="url(#paint2_linear_1704_1694-2)"></path>
+      <path
+        d="M45 21C45 17.6863 42.3137 15 39 15H31V22.8648C31 26.1785 33.6863 28.8648 37 28.8648H45V21Z"
+        fill="black"></path>
+      <path
+        d="M45 21C45 17.6863 42.3137 15 39 15H31V22.8648C31 26.1785 33.6863 28.8648 37 28.8648H45V21Z"
+        fill="url(#paint3_linear_1704_1694-2)"></path>
+      <defs>
+        <linearGradient
+          id="paint0_linear_1704_1694-2"
+          x1="35.5019"
+          y1="11.5679"
+          x2="15.3449"
+          y2="50.18"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#94D8FF"></stop>
+          <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+          <stop offset="1" stop-color="#E5B0FF"></stop>
+        </linearGradient>
+        <linearGradient
+          id="paint1_linear_1704_1694-2"
+          x1="35.5019"
+          y1="11.5679"
+          x2="15.3449"
+          y2="50.18"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#94D8FF"></stop>
+          <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+          <stop offset="1" stop-color="#E5B0FF"></stop>
+        </linearGradient>
+        <linearGradient
+          id="paint2_linear_1704_1694-2"
+          x1="35.5019"
+          y1="11.5679"
+          x2="15.3449"
+          y2="50.18"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#94D8FF"></stop>
+          <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+          <stop offset="1" stop-color="#E5B0FF"></stop>
+        </linearGradient>
+        <linearGradient
+          id="paint3_linear_1704_1694-2"
+          x1="35.5019"
+          y1="11.5679"
+          x2="15.3449"
+          y2="50.18"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#94D8FF"></stop>
+          <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+          <stop offset="1" stop-color="#E5B0FF"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+    <span class="grow text-center">Try Beta Version</span>
+  </button>
+</section>
+<section id="section-three-wrapper" class="section-full-height section-wrapper">
+  <h1 class="section-heading">Platform Walkthrough</h1>
+  <div class="flex-container-walkthrough flex gap-4 grow">
+    <div class="walkfru-item walkfru-1">
+      <div class="walkfru-h2-and-text">
+        <h2 class="grid-item-heading icon-and-h2">Import references</h2>
+        <p>
+          To make the app follow your requirements, you can import any
+          screenshots of other apps, styles. Or your design system from Figma or
+          Swift/Java component library
+        </p>
+      </div>
+    </div>
+    <div class="walkfru-item walkfru-2">
+      <div class="walkfru-h2-and-text self-end">
+        <h2 class="grid-item-heading icon-and-h2">Build and edit user flows</h2>
+        <p class="">
+          Rather than just creating screens, create and edit user flows and let
+          RASP handle the UI to solve for them. We build a full app for you, not
+          one screen.
+        </p>
+      </div>
+    </div>
+    <div class="walkfru-item walkfru-3">
+      <div class="walkfru-h2-and-text">
+        <h2 class="grid-item-heading icon-and-h2">
+          Real-time edits and UI mockups
+        </h2>
+        <p class="">
+          Just text RASP your edits and see implementation in real-time with
+          great UI mockups
+        </p>
+      </div>
+    </div>
+    <div class="walkfru-item walkfru-4">
+      <div class="walkfru-h2-and-text self-end">
+        <h2 class="grid-item-heading icon-and-h2">Export to Figma</h2>
+        <p class="">
+          Export your mockups to Figma to refine. They're fully editable in
+          Figma. Or Swift. Or Java
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  TODO last section -->
+<section
+  class="section-wrapper section-wrapper-4 relative flex max-w-[1920px] mx-auto"
+>
+  <div class="section-3-left basis-full flex-col flex">
+    <p class="p-magnified">
+      “This is an incredible tool for Product Managers. We usually spend not
+      enough
+    </p>
+    <h2>time on user tests, but with RASP we can focus on</h2>
+    <p class="p-magnified">
+      deeper research and competitive differentiation rather than on routine
+      project management.“
+    </p>
+
+    <!-- TODO here button should be furhter from the bottom and no bottom padding should be applied to this section -->
+    <button class="blacked modal-button only-desktop icon-and-h2 not-absolute">
       <!-- <img class="icon" src="public/" alt=""> -->
       <svg
         width="60"
@@ -515,254 +871,228 @@ import "../styles/main.css";
           d="M39 15C42.3137 15 45 17.6863 45 21V28.8648L37 28.8648C33.6863 28.8648 31 26.1785 31 22.8648L31 15L39 15Z"
           fill="black"></path>
       </svg>
-      <svg class="button-gradient-svg" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 29C0 12.9837 12.9837 0 29 0H31C47.0163 0 60 12.9837 60 29V31C60 47.0163 47.0163 60 31 60H29C12.9837 60 0 47.0163 0 31V29Z" fill="white"/>
-        <!-- <path d="M21 15C17.6863 15 15 17.6863 15 21V28.8648H23C26.3137 28.8648 29 26.1785 29 22.8648V15H21Z" fill="url(#paint2_linear_1704_1694-2)"/> -->
-        <path d="M21 15C17.6863 15 15 17.6863 15 21V28.8648H23C26.3137 28.8648 29 26.1785 29 22.8648V15H21Z" fill="url(#paint0_linear_1704_1694-2)"/>
-        <path d="M39 44.7104C42.3137 44.7104 45 42.0242 45 38.7104V30.8457H37C33.6863 30.8457 31 33.532 31 36.8457V44.7104H39Z" fill="url(#paint2_linear_1704_1694-2)"/>
-        <path d="M39 44.7104C42.3137 44.7104 45 42.0242 45 38.7104V30.8457H37C33.6863 30.8457 31 33.532 31 36.8457V44.7104H39Z" fill="url(#paint1_linear_1704_1694-2)"/>
-        <path d="M21 44.7104C17.6863 44.7104 15 42.0242 15 38.7104V30.8457H23C26.3137 30.8457 29 33.532 29 36.8457V44.7104H21Z" fill="url(#paint2_linear_1704_1694-2)"/>
-        <path d="M21 44.7104C17.6863 44.7104 15 42.0242 15 38.7104V30.8457H23C26.3137 30.8457 29 33.532 29 36.8457V44.7104H21Z" fill="url(#paint2_linear_1704_1694-2)"/>
-        <path d="M45 21C45 17.6863 42.3137 15 39 15H31V22.8648C31 26.1785 33.6863 28.8648 37 28.8648H45V21Z" fill="black"/>
-        <path d="M45 21C45 17.6863 42.3137 15 39 15H31V22.8648C31 26.1785 33.6863 28.8648 37 28.8648H45V21Z" fill="url(#paint3_linear_1704_1694-2)"/>
+      <svg
+        class="button-gradient-svg"
+        width="60"
+        height="60"
+        viewBox="0 0 60 60"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 29C0 12.9837 12.9837 0 29 0H31C47.0163 0 60 12.9837 60 29V31C60 47.0163 47.0163 60 31 60H29C12.9837 60 0 47.0163 0 31V29Z"
+          fill="white"></path>
+        <path
+          d="M21 15C17.6863 15 15 17.6863 15 21V28.8648H23C26.3137 28.8648 29 26.1785 29 22.8648V15H21Z"
+          fill="black"></path>
+        <path
+          d="M21 15C17.6863 15 15 17.6863 15 21V28.8648H23C26.3137 28.8648 29 26.1785 29 22.8648V15H21Z"
+          fill="url(#paint0_linear_1704_1694)"></path>
+        <path
+          d="M39 44.7104C42.3137 44.7104 45 42.0242 45 38.7104V30.8457H37C33.6863 30.8457 31 33.532 31 36.8457V44.7104H39Z"
+          fill="black"></path>
+        <path
+          d="M39 44.7104C42.3137 44.7104 45 42.0242 45 38.7104V30.8457H37C33.6863 30.8457 31 33.532 31 36.8457V44.7104H39Z"
+          fill="url(#paint1_linear_1704_1694)"></path>
+        <path
+          d="M21 44.7104C17.6863 44.7104 15 42.0242 15 38.7104V30.8457H23C26.3137 30.8457 29 33.532 29 36.8457V44.7104H21Z"
+          fill="black"></path>
+        <path
+          d="M21 44.7104C17.6863 44.7104 15 42.0242 15 38.7104V30.8457H23C26.3137 30.8457 29 33.532 29 36.8457V44.7104H21Z"
+          fill="url(#paint2_linear_1704_1694)"></path>
+        <path
+          d="M45 21C45 17.6863 42.3137 15 39 15H31V22.8648C31 26.1785 33.6863 28.8648 37 28.8648H45V21Z"
+          fill="black"></path>
+        <path
+          d="M45 21C45 17.6863 42.3137 15 39 15H31V22.8648C31 26.1785 33.6863 28.8648 37 28.8648H45V21Z"
+          fill="url(#paint3_linear_1704_1694)"></path>
         <defs>
-        <linearGradient id="paint0_linear_1704_1694-2" x1="35.5019" y1="11.5679" x2="15.3449" y2="50.18" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#94D8FF"/>
-        <stop offset="0.589024" stop-color="#A5A5FF"/>
-        <stop offset="1" stop-color="#E5B0FF"/>
-        </linearGradient>
-        <linearGradient id="paint1_linear_1704_1694-2" x1="35.5019" y1="11.5679" x2="15.3449" y2="50.18" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#94D8FF"/>
-        <stop offset="0.589024" stop-color="#A5A5FF"/>
-        <stop offset="1" stop-color="#E5B0FF"/>
-        </linearGradient>
-        <linearGradient id="paint2_linear_1704_1694-2" x1="35.5019" y1="11.5679" x2="15.3449" y2="50.18" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#94D8FF"/>
-        <stop offset="0.589024" stop-color="#A5A5FF"/>
-        <stop offset="1" stop-color="#E5B0FF"/>
-        </linearGradient>
-        <linearGradient id="paint3_linear_1704_1694-2" x1="35.5019" y1="11.5679" x2="15.3449" y2="50.18" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#94D8FF"/>
-        <stop offset="0.589024" stop-color="#A5A5FF"/>
-        <stop offset="1" stop-color="#E5B0FF"/>
-        </linearGradient>
+          <linearGradient
+            id="paint0_linear_1704_1694"
+            x1="35.5019"
+            y1="11.5679"
+            x2="15.3449"
+            y2="50.18"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#94D8FF"></stop>
+            <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+            <stop offset="1" stop-color="#E5B0FF"></stop>
+          </linearGradient>
+          <linearGradient
+            id="paint1_linear_1704_1694"
+            x1="35.5019"
+            y1="11.5679"
+            x2="15.3449"
+            y2="50.18"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#94D8FF"></stop>
+            <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+            <stop offset="1" stop-color="#E5B0FF"></stop>
+          </linearGradient>
+          <linearGradient
+            id="paint2_linear_1704_1694"
+            x1="35.5019"
+            y1="11.5679"
+            x2="15.3449"
+            y2="50.18"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#94D8FF"></stop>
+            <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+            <stop offset="1" stop-color="#E5B0FF"></stop>
+          </linearGradient>
+          <linearGradient
+            id="paint3_linear_1704_1694"
+            x1="35.5019"
+            y1="11.5679"
+            x2="15.3449"
+            y2="50.18"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#94D8FF"></stop>
+            <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+            <stop offset="1" stop-color="#E5B0FF"></stop>
+          </linearGradient>
         </defs>
-        </svg>
+      </svg>
       <span class="grow text-center">Try Beta Version</span>
     </button>
-  </section>
-  <section id="section-three-wrapper" class="section-full-height section-wrapper">
-    <h1 class="section-heading">Platform Walkthrough</h1>
-    <div class="flex-container-walkthrough flex gap-4 grow">
-      <div class="walkfru-item walkfru-1">
-        <div class="walkfru-h2-and-text">
-          <h2 class="grid-item-heading icon-and-h2">Import references</h2>
-          <p>
-            To make the app follow your requirements, you can import any
-            screenshots of other apps, styles. Or your design system from Figma
-            or Swift/Java component library
-          </p>
-        </div>
-      </div>
-      <div class="walkfru-item walkfru-2">
-        <div class="walkfru-h2-and-text self-end">
-          <h2 class="grid-item-heading icon-and-h2">
-            Build and edit user flows
-          </h2>
-          <p class="">
-            Rather than just creating screens, create and edit user flows and
-            let RASP handle the UI to solve for them. We build a full app for
-            you, not one screen.
-          </p>
-        </div>
-      </div>
-      <div class="walkfru-item walkfru-3">
-        <div class="walkfru-h2-and-text">
-          <h2 class="grid-item-heading icon-and-h2">
-            Real-time edits and UI mockups
-          </h2>
-          <p class="">
-            Just text RASP your edits and see implementation in real-time with
-            great UI mockups
-          </p>
-        </div>
-      </div>
-      <div class="walkfru-item walkfru-4">
-        <div class="walkfru-h2-and-text self-end">
-          <h2 class="grid-item-heading icon-and-h2">Export to Figma</h2>
-          <p class="">
-            Export your mockups to Figma to refine. They're fully editable in
-            Figma. Or Swift. Or Java
-          </p>
-        </div>
-      </div>
+    <button class="blacked modal-button hidden not-absolute">
+      <!-- <img class="icon" src="public/" alt=""> -->
+      <svg
+        width="60"
+        height="60"
+        viewBox="0 0 60 60"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="60" height="60" rx="29" fill="white"></rect>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M15 21C15 17.6863 17.6863 15 21 15H29V22.8648C29 26.1785 26.3137 28.8648 23 28.8648H15L15 21Z"
+          fill="black"></path>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M45 38.71C45 42.0237 42.3137 44.71 39 44.71H31L31 36.8452C31 33.5315 33.6863 30.8452 37 30.8452L45 30.8452L45 38.71Z"
+          fill="black"></path>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M21 44.71C17.6863 44.71 15 42.0237 15 38.71L15 30.8452L23 30.8452C26.3137 30.8452 29 33.5315 29 36.8452L29 44.71L21 44.71Z"
+          fill="black"></path>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M39 15C42.3137 15 45 17.6863 45 21V28.8648L37 28.8648C33.6863 28.8648 31 26.1785 31 22.8648L31 15L39 15Z"
+          fill="black"></path>
+      </svg>
+      <svg
+        class="button-gradient-svg"
+        width="60"
+        height="60"
+        viewBox="0 0 60 60"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 29C0 12.9837 12.9837 0 29 0H31C47.0163 0 60 12.9837 60 29V31C60 47.0163 47.0163 60 31 60H29C12.9837 60 0 47.0163 0 31V29Z"
+          fill="white"></path>
+        <!-- <path d="M21 15C17.6863 15 15 17.6863 15 21V28.8648H23C26.3137 28.8648 29 26.1785 29 22.8648V15H21Z" fill="url(#paint2_linear_1704_1694-2)"/> -->
+        <path
+          d="M21 15C17.6863 15 15 17.6863 15 21V28.8648H23C26.3137 28.8648 29 26.1785 29 22.8648V15H21Z"
+          fill="url(#paint0_linear_1704_1694-2)"></path>
+        <path
+          d="M39 44.7104C42.3137 44.7104 45 42.0242 45 38.7104V30.8457H37C33.6863 30.8457 31 33.532 31 36.8457V44.7104H39Z"
+          fill="url(#paint2_linear_1704_1694-2)"></path>
+        <path
+          d="M39 44.7104C42.3137 44.7104 45 42.0242 45 38.7104V30.8457H37C33.6863 30.8457 31 33.532 31 36.8457V44.7104H39Z"
+          fill="url(#paint1_linear_1704_1694-2)"></path>
+        <path
+          d="M21 44.7104C17.6863 44.7104 15 42.0242 15 38.7104V30.8457H23C26.3137 30.8457 29 33.532 29 36.8457V44.7104H21Z"
+          fill="url(#paint2_linear_1704_1694-2)"></path>
+        <path
+          d="M21 44.7104C17.6863 44.7104 15 42.0242 15 38.7104V30.8457H23C26.3137 30.8457 29 33.532 29 36.8457V44.7104H21Z"
+          fill="url(#paint2_linear_1704_1694-2)"></path>
+        <path
+          d="M45 21C45 17.6863 42.3137 15 39 15H31V22.8648C31 26.1785 33.6863 28.8648 37 28.8648H45V21Z"
+          fill="black"></path>
+        <path
+          d="M45 21C45 17.6863 42.3137 15 39 15H31V22.8648C31 26.1785 33.6863 28.8648 37 28.8648H45V21Z"
+          fill="url(#paint3_linear_1704_1694-2)"></path>
+        <defs>
+          <linearGradient
+            id="paint0_linear_1704_1694-2"
+            x1="35.5019"
+            y1="11.5679"
+            x2="15.3449"
+            y2="50.18"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#94D8FF"></stop>
+            <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+            <stop offset="1" stop-color="#E5B0FF"></stop>
+          </linearGradient>
+          <linearGradient
+            id="paint1_linear_1704_1694-2"
+            x1="35.5019"
+            y1="11.5679"
+            x2="15.3449"
+            y2="50.18"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#94D8FF"></stop>
+            <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+            <stop offset="1" stop-color="#E5B0FF"></stop>
+          </linearGradient>
+          <linearGradient
+            id="paint2_linear_1704_1694-2"
+            x1="35.5019"
+            y1="11.5679"
+            x2="15.3449"
+            y2="50.18"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#94D8FF"></stop>
+            <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+            <stop offset="1" stop-color="#E5B0FF"></stop>
+          </linearGradient>
+          <linearGradient
+            id="paint3_linear_1704_1694-2"
+            x1="35.5019"
+            y1="11.5679"
+            x2="15.3449"
+            y2="50.18"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#94D8FF"></stop>
+            <stop offset="0.589024" stop-color="#A5A5FF"></stop>
+            <stop offset="1" stop-color="#E5B0FF"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="grow text-center">Try Beta Version</span>
+    </button>
+  </div>
+  <div class="section-3-right basis-full flex">
+    <div class="phone-image-container overflow-hidden">
+      <img class="object-cover" src="Untitled-2.png" />
     </div>
-  </section>
-  <!--  TODO last section -->
-  <section
-    class="section-wrapper section-wrapper-4 relative flex max-w-[1920px] mx-auto"
-  >
-    <div class="section-3-left basis-full flex-col flex">
-      <p class="p-magnified">
-        “This is an incredible tool for Product Managers. We usually spend not
-        enough
-      </p>
-      <h2>time on user tests, but with RASP we can focus on</h2>
-      <p class="p-magnified">
-        deeper research and competitive differentiation rather than on routine
-        project management.“
-      </p>
-
-      <!-- TODO here button should be furhter from the bottom and no bottom padding should be applied to this section -->
-      <button class="blacked only-desktop icon-and-h2 not-absolute">
-        <!-- <img class="icon" src="public/" alt=""> -->
-        <svg
-          width="60"
-          height="60"
-          viewBox="0 0 60 60"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="60" height="60" rx="29" fill="white"></rect>
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M15 21C15 17.6863 17.6863 15 21 15H29V22.8648C29 26.1785 26.3137 28.8648 23 28.8648H15L15 21Z"
-            fill="black"></path>
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M45 38.71C45 42.0237 42.3137 44.71 39 44.71H31L31 36.8452C31 33.5315 33.6863 30.8452 37 30.8452L45 30.8452L45 38.71Z"
-            fill="black"></path>
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M21 44.71C17.6863 44.71 15 42.0237 15 38.71L15 30.8452L23 30.8452C26.3137 30.8452 29 33.5315 29 36.8452L29 44.71L21 44.71Z"
-            fill="black"></path>
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M39 15C42.3137 15 45 17.6863 45 21V28.8648L37 28.8648C33.6863 28.8648 31 26.1785 31 22.8648L31 15L39 15Z"
-            fill="black"></path>
-        </svg>
-        <svg class="button-gradient-svg" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 29C0 12.9837 12.9837 0 29 0H31C47.0163 0 60 12.9837 60 29V31C60 47.0163 47.0163 60 31 60H29C12.9837 60 0 47.0163 0 31V29Z" fill="white"/>
-          <path d="M21 15C17.6863 15 15 17.6863 15 21V28.8648H23C26.3137 28.8648 29 26.1785 29 22.8648V15H21Z" fill="black"/>
-          <path d="M21 15C17.6863 15 15 17.6863 15 21V28.8648H23C26.3137 28.8648 29 26.1785 29 22.8648V15H21Z" fill="url(#paint0_linear_1704_1694)"/>
-          <path d="M39 44.7104C42.3137 44.7104 45 42.0242 45 38.7104V30.8457H37C33.6863 30.8457 31 33.532 31 36.8457V44.7104H39Z" fill="black"/>
-          <path d="M39 44.7104C42.3137 44.7104 45 42.0242 45 38.7104V30.8457H37C33.6863 30.8457 31 33.532 31 36.8457V44.7104H39Z" fill="url(#paint1_linear_1704_1694)"/>
-          <path d="M21 44.7104C17.6863 44.7104 15 42.0242 15 38.7104V30.8457H23C26.3137 30.8457 29 33.532 29 36.8457V44.7104H21Z" fill="black"/>
-          <path d="M21 44.7104C17.6863 44.7104 15 42.0242 15 38.7104V30.8457H23C26.3137 30.8457 29 33.532 29 36.8457V44.7104H21Z" fill="url(#paint2_linear_1704_1694)"/>
-          <path d="M45 21C45 17.6863 42.3137 15 39 15H31V22.8648C31 26.1785 33.6863 28.8648 37 28.8648H45V21Z" fill="black"/>
-          <path d="M45 21C45 17.6863 42.3137 15 39 15H31V22.8648C31 26.1785 33.6863 28.8648 37 28.8648H45V21Z" fill="url(#paint3_linear_1704_1694)"/>
-          <defs>
-          <linearGradient id="paint0_linear_1704_1694" x1="35.5019" y1="11.5679" x2="15.3449" y2="50.18" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#94D8FF"/>
-          <stop offset="0.589024" stop-color="#A5A5FF"/>
-          <stop offset="1" stop-color="#E5B0FF"/>
-          </linearGradient>
-          <linearGradient id="paint1_linear_1704_1694" x1="35.5019" y1="11.5679" x2="15.3449" y2="50.18" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#94D8FF"/>
-          <stop offset="0.589024" stop-color="#A5A5FF"/>
-          <stop offset="1" stop-color="#E5B0FF"/>
-          </linearGradient>
-          <linearGradient id="paint2_linear_1704_1694" x1="35.5019" y1="11.5679" x2="15.3449" y2="50.18" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#94D8FF"/>
-          <stop offset="0.589024" stop-color="#A5A5FF"/>
-          <stop offset="1" stop-color="#E5B0FF"/>
-          </linearGradient>
-          <linearGradient id="paint3_linear_1704_1694" x1="35.5019" y1="11.5679" x2="15.3449" y2="50.18" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#94D8FF"/>
-          <stop offset="0.589024" stop-color="#A5A5FF"/>
-          <stop offset="1" stop-color="#E5B0FF"/>
-          </linearGradient>
-          </defs>
-          </svg>
-        <span class="grow text-center">Try Beta Version</span>
-      </button>
-      <button class="blacked hidden not-absolute">
-        <!-- <img class="icon" src="public/" alt=""> -->
-        <svg
-          width="60"
-          height="60"
-          viewBox="0 0 60 60"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="60" height="60" rx="29" fill="white"></rect>
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M15 21C15 17.6863 17.6863 15 21 15H29V22.8648C29 26.1785 26.3137 28.8648 23 28.8648H15L15 21Z"
-            fill="black"></path>
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M45 38.71C45 42.0237 42.3137 44.71 39 44.71H31L31 36.8452C31 33.5315 33.6863 30.8452 37 30.8452L45 30.8452L45 38.71Z"
-            fill="black"></path>
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M21 44.71C17.6863 44.71 15 42.0237 15 38.71L15 30.8452L23 30.8452C26.3137 30.8452 29 33.5315 29 36.8452L29 44.71L21 44.71Z"
-            fill="black"></path>
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M39 15C42.3137 15 45 17.6863 45 21V28.8648L37 28.8648C33.6863 28.8648 31 26.1785 31 22.8648L31 15L39 15Z"
-            fill="black"></path>
-        </svg>
-        <svg class="button-gradient-svg" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 29C0 12.9837 12.9837 0 29 0H31C47.0163 0 60 12.9837 60 29V31C60 47.0163 47.0163 60 31 60H29C12.9837 60 0 47.0163 0 31V29Z" fill="white"/>
-          <!-- <path d="M21 15C17.6863 15 15 17.6863 15 21V28.8648H23C26.3137 28.8648 29 26.1785 29 22.8648V15H21Z" fill="url(#paint2_linear_1704_1694-2)"/> -->
-          <path d="M21 15C17.6863 15 15 17.6863 15 21V28.8648H23C26.3137 28.8648 29 26.1785 29 22.8648V15H21Z" fill="url(#paint0_linear_1704_1694-2)"/>
-          <path d="M39 44.7104C42.3137 44.7104 45 42.0242 45 38.7104V30.8457H37C33.6863 30.8457 31 33.532 31 36.8457V44.7104H39Z" fill="url(#paint2_linear_1704_1694-2)"/>
-          <path d="M39 44.7104C42.3137 44.7104 45 42.0242 45 38.7104V30.8457H37C33.6863 30.8457 31 33.532 31 36.8457V44.7104H39Z" fill="url(#paint1_linear_1704_1694-2)"/>
-          <path d="M21 44.7104C17.6863 44.7104 15 42.0242 15 38.7104V30.8457H23C26.3137 30.8457 29 33.532 29 36.8457V44.7104H21Z" fill="url(#paint2_linear_1704_1694-2)"/>
-          <path d="M21 44.7104C17.6863 44.7104 15 42.0242 15 38.7104V30.8457H23C26.3137 30.8457 29 33.532 29 36.8457V44.7104H21Z" fill="url(#paint2_linear_1704_1694-2)"/>
-          <path d="M45 21C45 17.6863 42.3137 15 39 15H31V22.8648C31 26.1785 33.6863 28.8648 37 28.8648H45V21Z" fill="black"/>
-          <path d="M45 21C45 17.6863 42.3137 15 39 15H31V22.8648C31 26.1785 33.6863 28.8648 37 28.8648H45V21Z" fill="url(#paint3_linear_1704_1694-2)"/>
-          <defs>
-          <linearGradient id="paint0_linear_1704_1694-2" x1="35.5019" y1="11.5679" x2="15.3449" y2="50.18" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#94D8FF"/>
-          <stop offset="0.589024" stop-color="#A5A5FF"/>
-          <stop offset="1" stop-color="#E5B0FF"/>
-          </linearGradient>
-          <linearGradient id="paint1_linear_1704_1694-2" x1="35.5019" y1="11.5679" x2="15.3449" y2="50.18" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#94D8FF"/>
-          <stop offset="0.589024" stop-color="#A5A5FF"/>
-          <stop offset="1" stop-color="#E5B0FF"/>
-          </linearGradient>
-          <linearGradient id="paint2_linear_1704_1694-2" x1="35.5019" y1="11.5679" x2="15.3449" y2="50.18" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#94D8FF"/>
-          <stop offset="0.589024" stop-color="#A5A5FF"/>
-          <stop offset="1" stop-color="#E5B0FF"/>
-          </linearGradient>
-          <linearGradient id="paint3_linear_1704_1694-2" x1="35.5019" y1="11.5679" x2="15.3449" y2="50.18" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#94D8FF"/>
-          <stop offset="0.589024" stop-color="#A5A5FF"/>
-          <stop offset="1" stop-color="#E5B0FF"/>
-          </linearGradient>
-          </defs>
-          </svg>
-        <span class="grow text-center">Try Beta Version</span>
-      </button>
-    </div>
-    <div class="section-3-right basis-full flex">
-      <div class="phone-image-container overflow-hidden">
-        <img class="object-cover" src="Untitled-2.png" />
-      </div>
-    </div>
-  </section>
-  <footer class="footer flex justify-between items-center">
-    <p>© 2023 All rights reserved.</p>
-    <div class="footer-svgs flex gap-2">
-      <div class="footer-svg svg-1"><img src="footer-svg-1.svg" alt="" /></div>
-      <div class="footer-svg svg-2"><img src="footer-svg-2.svg" alt="" /></div>
-      <div class="footer-svg svg-3"><img src="footer-svg-3.svg" alt="" /></div>
-      <div class="footer-svg svg-4"><img src="footer-svg-4.png" alt="" /></div>
-    </div>
-  </footer>
-  <!-- <script>
+  </div>
+</section>
+<footer class="footer flex justify-between items-center">
+  <p>© 2023 All rights reserved.</p>
+  <div class="footer-svgs flex gap-2">
+    <div class="footer-svg svg-1"><img src="footer-svg-1.svg" alt="" /></div>
+    <div class="footer-svg svg-2"><img src="footer-svg-2.svg" alt="" /></div>
+    <div class="footer-svg svg-3"><img src="footer-svg-3.svg" alt="" /></div>
+    <div class="footer-svg svg-4"><img src="footer-svg-4.png" alt="" /></div>
+  </div>
+</footer>
+<!-- <script>
     // Lenis Smooth Scroll
     import Lenis from "@studio-freight/lenis";
 
@@ -785,63 +1115,219 @@ import "../styles/main.css";
 
     //GSAP AND SCROLL TRIGGER
     import { gsap, ScrollTrigger, Draggable } from "gsap/all"; -->
-</MainLayout>
 
-<script>
-  const svgFillTrigger = document.querySelector(".grid-item-3")
+<script type="module" defer>
+  import Modal from "./../../modal.js";
+
+  const svgFillTrigger = document.querySelector(".grid-item-3");
   const svgs = document.querySelectorAll(".gradiented");
-  console.log(svgs)
-// Define the color gradient
+  console.log(svgs);
+  // Define the color gradient
 
-// Function to handle mouse enter event
-function handleMouseEnter(event) {
-  svgs.forEach(e => {
-    e.style.opacity = 1;
-  })
-}
+  // Function to handle mouse enter event
+  function handleMouseEnter(event) {
+    svgs.forEach((e) => {
+      e.style.opacity = 1;
+    });
+  }
 
-// Function to handle mouse leave event
-function handleMouseLeave(event) {
-  svgs.forEach(e => {
-    e.style.opacity = 0;
-  })
-}
+  // Function to handle mouse leave event
+  function handleMouseLeave(event) {
+    svgs.forEach((e) => {
+      e.style.opacity = 0;
+    });
+  }
 
-// Add event listeners for mouse enter and mouse leave events to each SVG element
+
+  const modal = new Modal({
+    backgroundOpacity: "0.6",
+  });
+
+
+
+  const submitButton = document.querySelector(".form-button")
+    console.log('hi')
+
+    submitButton.addEventListener("click", function onSuccess(e) {
+      const form = document.querySelector('form');
+      if (!form.checkValidity()) {
+       // If form is invalid, return or show error message
+       return;
+      }
+      e.preventDefault();
+    const formData = new FormData(form);
+    const retrievedData = {}
+      console.log(formData)
+      for (const [name, value] of formData.entries()) {
+      retrievedData[name] = value
+   }
+      modal.modalItself.innerHTML = `<div class="modal-inner">
+      <div class='modal-header'>
+        <h2 style="font-size:clamp(1rem, 0.9rem + 0.5vw, 1.5rem); text-align:center; margin-bottom:32px;font-weight: 600;">Request has been successfully sent!</h2>
+        </div>
+        <button data-type='modal__close-button' class="modal__close-button" style="background-color:black; width:100%; color:white; border-radius:42px; padding-block:18px;">
+          Close and Continue</button>
+      </div>`
+      modal.listenForButtons()
+    })
+
+   { // modalItself.innerHTML (inside here i add modal close button) and force reload after submit
+
+  }
+
+  // Add event listeners for mouse enter and mouse leave events to each SVG element
 
   svgFillTrigger.addEventListener("mouseenter", handleMouseEnter);
   svgFillTrigger.addEventListener("mouseleave", handleMouseLeave);
 
-
   const buttons = document.querySelectorAll("button");
 
-// Define the linear gradient as a CSS background-image
-const gradient = "linear-gradient(123deg, #94D8FF, #A5A5FF, #E5B0FF)";
+  // Define the linear gradient as a CSS background-image
+  const gradient = "linear-gradient(123deg, #94D8FF, #A5A5FF, #E5B0FF)";
 
-// Function to handle mouse enter event
-function handleMouseEnter_2(e) {
-  const innerSVG = e.target.querySelector(".button-gradient-svg")
-  console.log(innerSVG)
-  e.target.style.backgroundImage = gradient;
-  innerSVG.style.opacity = 1
+  // Function to handle mouse enter event
+  function handleMouseEnter_2(e) {
+    const innerSVG = e.target.querySelector(".button-gradient-svg");
+    e.target.style.backgroundImage = gradient;
+    innerSVG.style.opacity = 1;
+  }
 
-}
+  // Function to handle mouse leave event
+  function handleMouseLeave_2(e) {
+    const innerSVG = e.target.querySelector(".button-gradient-svg");
+    console.log(innerSVG)
+    e.target.style.backgroundImage = "none";
+    if (e.target.classList.contains("blacked")) {
+      e.target.background = 'black';
+    } else {
+      e.target.style.background = "linear-gradient(123.48deg,#d2eefe 12.11%,#f0f0ff 54.55%,#f7e9fe 84.16%)";
+    }
+    console.log("checking if")
+    innerSVG.style.opacity = "0"
+    console.log("afterwards")
+  }
 
-// Function to handle mouse leave event
-function handleMouseLeave_2(e) {
-  const innerSVG = e.target.querySelector(".button-gradient-svg")
-  e.target.style.backgroundImage = "none";
-  innerSVG.style.opacity = 0;
-}
-
-buttons.forEach(e => {
-  e.addEventListener("mouseenter", handleMouseEnter_2);
-  e.addEventListener("mouseleave", handleMouseLeave_2);
-})
+  buttons.forEach((e) => {
+    e.addEventListener("mouseenter", handleMouseEnter_2);
+    e.addEventListener("mouseleave", handleMouseLeave_2);
+  });
 
 
+
+
+
+
+
+  console.log(submitButton)
 
 
 </script>
 
+<style lang="scss">
+  [data-type="wrapper"] {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
 
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: transparent;
+    }
+
+    & [data-type="modal"] {
+      // top: calc(200px - 100%);
+      // position: absolute;
+      top: 200px;
+      position: fixed;
+      background-color: white;
+      border-radius: 32px;
+      padding: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
+      display: flex;
+      flex-direction: column;
+      width: min(90%, 500px);
+    }
+
+    & input.full {
+      width: 100%;
+      border-bottom: 1px solid #898989;
+      margin-bottom: 16px;
+    }
+
+    & label:not([for="checkbox"]) {
+      font-size:10px;
+    }
+
+    & .checkbox {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      margin-top: 12px;
+      gap:8px;
+    }
+
+    & .modal-header {
+      margin-bottom:32px;
+    }
+
+    & input[type="checkbox"] {
+      width:16px;
+    }
+
+    & .form-button {
+      padding-block: 18px;
+      width: 100%;
+      border-radius: 42px;
+      background: linear-gradient(
+        123deg,
+        #d2eefe 0%,
+        #f0f0ff 58.9%,
+        #f7e9fe 100%
+      );
+    }
+
+    & .form-button {
+      margin-top: 32px;
+    }
+
+    & .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h2 {
+        color: #131313;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.48px;
+      }
+    }
+
+    &.visible {
+      position: fixed;
+      display: flex;
+    }
+
+    & [data-type="modal-content"] {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+    }
+  }
+</style>
+
+<!-- TODO FIX BUTTONS AFTER CLICKING -->
+<!-- TODO FIX BUTTONS THEMSELVES (redo buttons in codepen) -->
+<!-- TODO RE-ADJUST FORM ELEMENTS, ADD FUNCTIONALITY  -->
