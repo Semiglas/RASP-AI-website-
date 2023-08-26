@@ -1092,33 +1092,10 @@ import "../styles/main.css";
     <div class="footer-svg svg-4"><img src="footer-svg-4.png" alt="" /></div>
   </div>
 </footer>
-<!-- <script>
-    // Lenis Smooth Scroll
-    import Lenis from "@studio-freight/lenis";
 
-    const lenis = new Lenis({
-      smoothWheel: true,
-      smoothTouch: true,
-      duration: 2.5,
-    });
+<script type="module">
 
-    lenis.on("scroll", (e) => {
-      console.log(e);
-    });
 
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
-    //GSAP AND SCROLL TRIGGER
-    import { gsap, ScrollTrigger, Draggable } from "gsap/all"; -->
-
-<script type="module" defer>
-
-  
 
 
 
@@ -1127,9 +1104,7 @@ import "../styles/main.css";
   const svgFillTrigger = document.querySelector(".grid-item-3");
   const svgs = document.querySelectorAll(".gradiented");
   console.log(svgs);
-  // Define the color gradient
-
-  // Function to handle mouse enter event
+ 
   function handleMouseEnter(event) {
     svgs.forEach((e) => {
       e.style.opacity = 1;
