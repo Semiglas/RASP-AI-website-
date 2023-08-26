@@ -1157,10 +1157,11 @@ import "../styles/main.css";
       e.preventDefault();
     const formData = new FormData(form);
     const retrievedData = {}
-      console.log(formData)
+
       for (const [name, value] of formData.entries()) {
       retrievedData[name] = value
    }
+   console.log(retrievedData)
       modal.modalItself.innerHTML = `<div class="modal-inner">
       <div class='modal-header'>
         <h2 style="font-size:clamp(1rem, 0.9rem + 0.5vw, 1.5rem); text-align:center; margin-bottom:32px;font-weight: 600;">Request has been successfully sent!</h2>
